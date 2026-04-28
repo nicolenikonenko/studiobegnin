@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1450" viewBox="0 0 3200 1450">
+  <defs>
+    <style>
+      .sans { font-family: Inter, Helvetica, Arial, sans-serif; }
+      .serif { font-family: Georgia, 'Times New Roman', serif; }
+      .smallcaps { font-family: Inter, Helvetica, Arial, sans-serif; letter-spacing: 5px; }
+      .muted { fill: #77756F; }
+      .text { fill: #111111; }
+      .line { stroke: #B8B5AD; stroke-width: 2; opacity: .65; }
+      .thin { stroke: #B8B5AD; stroke-width: 1.4; opacity: .5; }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#111111" flood-opacity="0.12"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="foldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DCD8CF" stop-opacity=".28"/>
+      <stop offset=".45" stop-color="#F9F8F4" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#D0CCC3" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#F6F3EE"/>
+  <rect x="0" y="1160" width="3200" height="290" fill="#E7E4DE" opacity=".33"/>
+
+  <rect x="345" y="177" width="1250" height="935" rx="4" fill="#EDEAE3" filter="url(#softShadow)" opacity=".8"/>
+  <rect x="1610" y="177" width="1220" height="935" rx="4" fill="#EDEAE3" filter="url(#softShadow)" opacity=".8"/>
+  <rect x="410" y="145" width="2390" height="975" rx="6" fill="#FAF9F5" filter="url(#shadow)"/>
+
+  <rect x="420" y="140" width="1180" height="985" rx="4" fill="#FBFAF7"/>
+  <rect x="1600" y="140" width="1180" height="985" rx="4" fill="#FBFAF7"/>
+  <rect x="1565" y="140" width="70" height="985" fill="url(#foldGrad)" opacity=".9"/>
+
+  <g opacity=".4">
+    <line x1="2788" y1="160" x2="2788" y2="1120" class="thin"/>
+    <line x1="2808" y1="172" x2="2808" y2="1130" class="thin"/>
+    <line x1="2825" y1="190" x2="2825" y2="1120" class="thin"/>
+  </g>
+
+  <text x="560" y="270" class="smallcaps text" font-size="26" font-weight="600">AUDIT-ERGEBNIS</text>
+  <text x="560" y="345" class="serif text" font-size="58">Gesamtübersicht</text>
+  <text x="560" y="418" class="sans muted" font-size="28">Sechs Themenfelder im Überblick</text>
+
+  <line x1="560" y1="500" x2="1420" y2="500" class="line"/>
+  <text x="915" y="468" class="smallcaps muted" font-size="18">THEMENFELD</text>
+  <text x="1170" y="468" class="smallcaps muted" font-size="18">STATUS</text>
+  <text x="1325" y="468" class="smallcaps muted" font-size="18">POTENZIAL</text>
+
+  
+    <text x="560" y="570" class="sans text" font-size="28" font-weight="600">01</text>
+    <text x="645" y="570" class="sans text" font-size="28">Wirtschaftliche Transparenz</text>
+    <circle cx="1215" cy="560" r="20" fill="#8A9A7B"/>
+    <circle cx="1368" cy="560" r="20" fill="#8A9A7B"/>
+    <line x1="560" y1="610" x2="1420" y2="610" class="thin"/>
+    
+    <text x="560" y="650" class="sans text" font-size="28" font-weight="600">02</text>
+    <text x="645" y="650" class="sans text" font-size="28">Projektcontrolling mit Logik</text>
+    <circle cx="1215" cy="640" r="20" fill="#8A9A7B"/>
+    <circle cx="1368" cy="640" r="20" fill="#C8C6BF"/>
+    <line x1="560" y1="690" x2="1420" y2="690" class="thin"/>
+    
+    <text x="560" y="730" class="sans text" font-size="28" font-weight="600">03</text>
+    <text x="645" y="730" class="sans text" font-size="28">Kapazitäten realistisch planen</text>
+    <circle cx="1215" cy="720" r="20" fill="#C8C6BF"/>
+    <circle cx="1368" cy="720" r="20" fill="#8A9A7B"/>
+    <line x1="560" y1="770" x2="1420" y2="770" class="thin"/>
+    
+    <text x="560" y="810" class="sans text" font-size="28" font-weight="600">04</text>
+    <text x="645" y="810" class="sans text" font-size="28">Verantwortung &amp; Routinen</text>
+    <circle cx="1215" cy="800" r="20" fill="#8A9A7B"/>
+    <circle cx="1368" cy="800" r="20" fill="#C8C6BF"/>
+    <line x1="560" y1="850" x2="1420" y2="850" class="thin"/>
+    
+    <text x="560" y="890" class="sans text" font-size="28" font-weight="600">05</text>
+    <text x="645" y="890" class="sans text" font-size="28">Liquidität sichern</text>
+    <circle cx="1215" cy="880" r="20" fill="#8A9A7B"/>
+    <circle cx="1368" cy="880" r="20" fill="#C8C6BF"/>
+    <line x1="560" y1="930" x2="1420" y2="930" class="thin"/>
+    
+    <text x="560" y="970" class="sans text" font-size="28" font-weight="600">06</text>
+    <text x="645" y="970" class="sans text" font-size="28">Prozesse &amp; Abläufe</text>
+    <circle cx="1215" cy="960" r="20" fill="#C8C6BF"/>
+    <circle cx="1368" cy="960" r="20" fill="#8A9A7B"/>
+    <line x1="560" y1="1010" x2="1420" y2="1010" class="thin"/>
+    
+
+  <text x="1775" y="275" class="smallcaps text" font-size="26" font-weight="600">IHR AKTUELLER</text>
+  <text x="1775" y="328" class="serif text" font-size="48">Klarheits-Score</text>
+
+  <circle cx="2135" cy="610" r="215" fill="none" stroke="#D8D5CF" stroke-width="62"/>
+  <path d="M 2135 395 A 215 215 0 1 1 1996 774" fill="none" stroke="#8A9A7B" stroke-width="62"/>
+  <circle cx="2135" cy="610" r="126" fill="#FBFAF7"/>
+  <text x="2135" y="622" text-anchor="middle" class="serif text" font-size="132">62</text>
+  <text x="2238" y="622" class="sans text" font-size="42">%</text>
+  <text x="2135" y="705" text-anchor="middle" class="sans muted" font-size="26">erste Einschätzung</text>
+
+  <text x="1775" y="940" class="serif text" font-size="44">Nächste Schritte</text>
+  <line x1="1775" y1="1005" x2="2520" y2="1005" class="line"/>
+  <line x1="1775" y1="1070" x2="2520" y2="1070" class="line"/>
+  <line x1="1775" y1="1135" x2="2355" y2="1135" class="line"/>
+
+  <text x="560" y="1090" class="smallcaps muted" font-size="18">STUDIO BENIGN</text>
+</svg>
