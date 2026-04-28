@@ -106,6 +106,56 @@ const serviceFormats = [
   },
 ]
 
+const approachSections = [
+  {
+    title: 'Was Bürosteuerung bedeutet',
+    paragraphs: [
+      'Bürosteuerung heißt, wirtschaftliche, operative und organisatorische Zusammenhänge so sichtbar zu machen, dass Entscheidungen rechtzeitig und nachvollziehbar getroffen werden können.',
+      'Im Architektur- und Planungsbüro betrifft das nicht nur Zahlen. Es betrifft das Zusammenspiel von Projekten, Leistungsständen, Honoraren, Stunden, Rechnungen, offenen Leistungen, Liquidität, Kapazitäten und Verantwortlichkeiten.',
+      'Ein Büro ist steuerungsfähig, wenn nicht erst im Rückblick deutlich wird, welche Projekte wirtschaftlich getragen haben, welche Leistungen nicht abgerechnet wurden oder welche Personen dauerhaft überlastet waren.',
+    ],
+  },
+  {
+    title: 'Keine Softwareberatung',
+    paragraphs: [
+      'Studio Benign beginnt nicht mit der Frage, welches Tool ein Büro braucht.',
+      'Software kann helfen, Informationen zugänglich zu machen. Sie ersetzt aber keine klare Steuerungslogik: Welche Informationen sind relevant? Wer pflegt sie? Wann werden sie besprochen? Wer entscheidet? Was passiert, wenn ein Projekt kippt?',
+      'Deshalb steht am Anfang nicht die Systemfrage, sondern die Führungsfrage.',
+    ],
+  },
+  {
+    title: 'Keine klassische Controllingberatung',
+    paragraphs: [
+      'Controlling im Architektur- und Planungsbüro darf nicht bei Auswertungen stehen bleiben.',
+      'Eine BWA, eine Stundenliste oder eine Projektübersicht entfalten erst dann Wirkung, wenn sie in den Büroalltag übersetzt werden: in Projektbesprechungen, Rechnungsroutinen, Kapazitätsplanung, Nachtragsklärung und Verantwortlichkeiten.',
+      'Studio Benign betrachtet Zahlen deshalb nicht isoliert, sondern im Zusammenhang mit Projektlogik, Leistungsphasen, Honorarstruktur, Büroorganisation und Entscheidungspraxis.',
+    ],
+  },
+]
+
+const workflowSteps = [
+  {
+    title: 'Verstehen',
+    text: 'Wie arbeitet das Büro tatsächlich? Welche Projekte laufen, wie werden Honorare und Stunden geführt, wie entstehen Rechnungen, wer trifft Entscheidungen und wo bleiben Informationen hängen?',
+  },
+  {
+    title: 'Sichtbar machen',
+    text: 'Vorhandene Informationen werden zusammengeführt und in eine nachvollziehbare Struktur gebracht.',
+  },
+  {
+    title: 'Einordnen',
+    text: 'Risiken, Lücken und Handlungsfelder werden nach Dringlichkeit, Wirkung und Umsetzbarkeit bewertet.',
+  },
+  {
+    title: 'Strukturieren',
+    text: 'Aus der Analyse entstehen konkrete Routinen, Verantwortlichkeiten und Arbeitsformate.',
+  },
+  {
+    title: 'Verankern',
+    text: 'Steuerung funktioniert nur, wenn sie wiederholbar wird und im Büroalltag tragfähig bleibt.',
+  },
+]
+
 function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
 
@@ -134,7 +184,9 @@ function App() {
     return (
       <main className="page-shell">
         <SiteHeader navigate={navigate} currentPath={currentPath} />
-        {currentPage.path === '/leistungen' ? (
+        {currentPage.path === '/ansatz' ? (
+          <ApproachPage />
+        ) : currentPage.path === '/leistungen' ? (
           <ServicesPage navigate={navigate} />
         ) : currentPage.path === '/ueber-mich' ? (
           <AboutPage />
@@ -400,6 +452,84 @@ function ServicesPage({ navigate }: ServicesPageProps) {
           </a>
         </div>
       </aside>
+    </section>
+  )
+}
+
+function ApproachPage() {
+  return (
+    <section className="approach-page" aria-labelledby="approach-title">
+      <div className="approach-intro">
+        <p className="kicker">Ansatz</p>
+        <h1 id="approach-title">
+          Bürosteuerung beginnt<br />
+          nicht bei Zahlen.<br />
+          Sondern bei Zusammenhängen.
+        </h1>
+        <span className="accent-rule" aria-hidden="true"></span>
+        <div>
+          <p>
+            Viele Architektur- und Planungsbüros verfügen bereits über zahlreiche
+            Informationen: Projektlisten, Stundenstände, Honorarvereinbarungen,
+            Rechnungen, offene Forderungen, Kapazitätsplanungen oder
+            betriebswirtschaftliche Auswertungen.
+          </p>
+          <p>
+            Die eigentliche Herausforderung liegt oft nicht darin, noch mehr Daten zu
+            erfassen. Entscheidend ist, ob diese Informationen regelmäßig
+            zusammengeführt, richtig eingeordnet und für Entscheidungen genutzt werden.
+          </p>
+          <p>
+            Studio Benign unterstützt Architektur- und Planungsbüros dabei, aus
+            vorhandenen Informationen ein klares Steuerungsbild zu entwickeln — für
+            Geschäftsführung, Projektleitung und Büroorganisation.
+          </p>
+        </div>
+      </div>
+
+      <div className="approach-section-list">
+        {approachSections.map((section) => (
+          <article className="approach-section" key={section.title}>
+            <h2>{section.title}</h2>
+            <div>
+              {section.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <section className="approach-workflow" aria-labelledby="workflow-title">
+        <h2 id="workflow-title">Arbeitsweise</h2>
+        <div>
+          {workflowSteps.map((step) => (
+            <article key={step.title}>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="approach-goal" aria-labelledby="goal-title">
+        <h2 id="goal-title">Ziel</h2>
+        <div>
+          <p>
+            Das Ziel ist nicht einfach ein Controllingsystem und keine zusätzliche
+            Bürokratie.
+          </p>
+          <p>
+            Das Ziel ist ein Büro, das regelmäßig erkennen kann, welche Projekte stabil
+            laufen, wo Risiken entstehen, welche Leistungen nachverfolgt werden müssen,
+            welche Kapazitäten verfügbar sind und welche Entscheidungen anstehen.
+          </p>
+          <p>
+            So entsteht Steuerungsfähigkeit: nicht als Kontrolle von außen, sondern als
+            Entlastung für Geschäftsführung, Projektleitung und Büroorganisation.
+          </p>
+        </div>
+      </section>
     </section>
   )
 }

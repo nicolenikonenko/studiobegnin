@@ -231,6 +231,170 @@ a {
   min-height: calc(100vh - 111px);
 }
 
+.approach-page {
+  width: calc(100% - (var(--page-gutter) * 2));
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 86px 0 72px;
+}
+
+.approach-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 0.58fr);
+  grid-template-areas:
+    "kicker ."
+    "title copy"
+    "rule copy";
+  column-gap: 92px;
+  row-gap: 0;
+  align-items: start;
+}
+
+.approach-intro .kicker {
+  grid-area: kicker;
+}
+
+.approach-intro h1 {
+  grid-area: title;
+}
+
+.approach-intro .accent-rule {
+  grid-area: rule;
+}
+
+.approach-intro > div {
+  grid-area: copy;
+}
+
+.approach-intro h1,
+.approach-section h2,
+.approach-goal p:first-child {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.approach-intro h1 {
+  margin-top: 28px;
+  font-size: clamp(3.4rem, 5vw, 5.2rem);
+  line-height: 1;
+}
+
+.approach-intro .accent-rule {
+  margin: 32px 0 0;
+}
+
+.approach-intro > div {
+  padding-top: 28px;
+}
+
+.approach-intro p:not(.kicker),
+.approach-section p,
+.approach-workflow p,
+.approach-goal p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.78;
+}
+
+.approach-intro p + p,
+.approach-section p + p,
+.approach-goal p + p {
+  margin-top: 18px;
+}
+
+.approach-intro p:nth-child(2) + p {
+  margin-top: 34px;
+}
+
+.approach-section-list {
+  margin-top: 78px;
+  border-top: 1px solid var(--border);
+}
+
+.approach-section {
+  display: grid;
+  grid-template-columns: 36% 64%;
+  gap: 84px;
+  padding: 42px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.approach-section h2 {
+  max-width: 360px;
+  font-size: clamp(2.15rem, 3vw, 3rem);
+  line-height: 1.03;
+}
+
+.approach-section > div {
+  max-width: 720px;
+  padding-left: 84px;
+  border-left: 1px solid var(--border);
+}
+
+.approach-workflow,
+.approach-goal {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 72px;
+  margin-top: 56px;
+}
+
+.approach-workflow {
+  padding: 38px 44px 42px;
+  background: #efede7;
+}
+
+.approach-workflow h2,
+.approach-workflow h3,
+.approach-goal h2 {
+  margin: 0;
+  color: var(--sage-green);
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.approach-workflow > div {
+  display: grid;
+  gap: 0;
+}
+
+.approach-workflow article {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 44px;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+
+.approach-workflow article:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.approach-workflow article:last-child {
+  padding-bottom: 0;
+}
+
+.approach-goal {
+  padding-top: 46px;
+  border-top: 1px solid var(--border);
+}
+
+.approach-goal > div {
+  max-width: 820px;
+}
+
+.approach-goal p:first-child {
+  font-size: clamp(1.75rem, 2.35vw, 2.55rem);
+  line-height: 1.13;
+}
+
 .services-page {
   width: calc(100% - (var(--page-gutter) * 2));
   max-width: 1360px;
@@ -605,23 +769,23 @@ a {
 .audit-copy,
 .about-panel,
 .contact-panel {
-  padding: 44px var(--page-gutter);
+  padding: 58px var(--page-gutter);
 }
 
 .benefit-panel {
-  min-height: 360px;
+  min-height: 430px;
   padding-right: 76px;
 }
 
 .problem-panel {
-  min-height: 360px;
+  min-height: 430px;
   padding-left: var(--page-gutter);
   border-left: 1px solid var(--border);
 }
 
 .two-column-section > .benefit-panel,
 .two-column-section > .problem-panel {
-  padding-top: 34px;
+  padding-top: 48px;
 }
 
 .two-column-section > .benefit-panel > .kicker,
@@ -684,7 +848,7 @@ a {
 }
 
 .topics-section {
-  padding: 34px var(--page-gutter) 32px;
+  padding: 52px var(--page-gutter) 54px;
   border-bottom: 1px solid var(--border);
   background: #efede7;
 }
@@ -699,7 +863,7 @@ a {
 }
 
 .topic-card {
-  min-height: 260px;
+  min-height: 320px;
   padding: 10px 48px 18px 0;
   border-right: 1px solid var(--border);
 }
@@ -738,6 +902,7 @@ a {
 }
 
 .audit-copy {
+  min-height: 520px;
   padding-right: 70px;
 }
 
@@ -754,9 +919,9 @@ a {
 }
 
 .audit-image {
-  min-height: 390px;
+  min-height: 520px;
   border-left: 1px solid var(--border);
-  background: #f3f1ec url('/images/audit.svg') center / contain no-repeat;
+  background: #f3f1ec url('/images/audit.svg') center / 86% auto no-repeat;
 }
 
 .audit-image::before,
@@ -767,12 +932,13 @@ a {
 .about-contact-row {
   display: grid;
   grid-template-columns: 28% 43% 29%;
+  min-height: 410px;
   border-bottom: 1px solid var(--border);
   background: #fbfaf7;
 }
 
 .portrait-image {
-  min-height: 320px;
+  min-height: 410px;
   background: url('/images/portrait.png') center / cover no-repeat;
 }
 
@@ -782,7 +948,7 @@ a {
 }
 
 .about-panel {
-  padding: 44px;
+  padding: 58px 44px;
   border-left: 1px solid var(--border);
 }
 
@@ -803,7 +969,7 @@ a {
 }
 
 .contact-panel {
-  padding: 44px;
+  padding: 58px 44px;
   background: #dfe1d3;
 }
 
@@ -920,6 +1086,10 @@ a {
   .service-format,
   .services-callout,
   .services-hero,
+  .approach-intro,
+  .approach-section,
+  .approach-workflow,
+  .approach-goal,
   .about-page-hero,
   .about-page-sections {
     grid-template-columns: 1fr;
@@ -936,15 +1106,35 @@ a {
   }
 
   .service-format-details,
+  .approach-section > div,
   .services-callout > div + div,
   .about-page-sections article + article {
     border-left: 0;
   }
 
   .service-detail,
+  .approach-section > div,
   .services-callout > div + div,
   .about-page-sections article + article {
     padding-left: 0;
+  }
+
+  .approach-workflow article {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .approach-intro > div {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .approach-intro {
+    grid-template-areas:
+      "kicker"
+      "title"
+      "rule"
+      "copy";
   }
 
   .about-page {
@@ -1006,6 +1196,11 @@ a {
     padding: 56px 0 44px;
   }
 
+  .approach-page {
+    width: min(100% - 32px, 1360px);
+    padding: 56px 0 44px;
+  }
+
   .about-page {
     width: min(100% - 32px, 1360px);
     padding: 56px 0 44px;
@@ -1018,6 +1213,18 @@ a {
 
   .services-intro h1 {
     font-size: clamp(3.05rem, 14vw, 4.4rem);
+  }
+
+  .approach-intro h1 {
+    font-size: clamp(3.05rem, 14vw, 4.4rem);
+  }
+
+  .approach-section-list {
+    margin-top: 54px;
+  }
+
+  .approach-workflow {
+    padding: 30px 24px;
   }
 
   .services-hero-image {
