@@ -96,6 +96,15 @@ a {
   font-weight: 560;
 }
 
+.nav-links a {
+  padding-bottom: 12px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-links a.is-active {
+  border-color: var(--fast-black);
+}
+
 .nav-links a,
 .nav-cta,
 .button,
@@ -220,6 +229,349 @@ a {
 
 .empty-page {
   min-height: calc(100vh - 111px);
+}
+
+.services-page {
+  width: calc(100% - (var(--page-gutter) * 2));
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 86px 0 64px;
+}
+
+.services-intro {
+  max-width: 720px;
+}
+
+.services-intro h1,
+.service-format-main h2,
+.services-callout h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.services-intro h1 {
+  margin-top: 28px;
+  font-size: clamp(3.4rem, 5vw, 5.2rem);
+  line-height: 1;
+}
+
+.services-intro .accent-rule,
+.services-callout .accent-rule {
+  margin: 32px 0 34px;
+}
+
+.services-intro p:not(.kicker) {
+  max-width: 520px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.8;
+}
+
+.service-format-list {
+  margin-top: 64px;
+}
+
+.service-format {
+  display: grid;
+  grid-template-columns: 43% 57%;
+  gap: 72px;
+  padding: 38px 0 44px;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-format:first-child {
+  padding-top: 0;
+}
+
+.service-format-main {
+  padding-right: 48px;
+}
+
+.service-number {
+  display: block;
+  color: var(--sage-green);
+  font-family: var(--serif);
+  font-size: clamp(4.75rem, 7vw, 6.25rem);
+  line-height: 0.92;
+}
+
+.service-format-main h2 {
+  margin-top: 24px;
+  font-size: clamp(2.25rem, 3.2vw, 3.15rem);
+  line-height: 1;
+}
+
+.service-subtitle,
+.service-detail h3 {
+  color: var(--sage-green);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.service-subtitle {
+  margin: 26px 0 0;
+}
+
+.service-format-main p:not(.service-subtitle),
+.service-detail p,
+.services-callout p {
+  margin: 18px 0 0;
+  font-size: 0.95rem;
+  font-weight: 450;
+  line-height: 1.72;
+}
+
+.service-format-main > a,
+.services-callout a {
+  display: inline-flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 34px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--sage-green);
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-format-details {
+  border-left: 1px solid var(--border);
+}
+
+.service-detail {
+  padding: 0 0 24px 84px;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-detail + .service-detail {
+  padding-top: 24px;
+}
+
+.service-detail:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.service-detail h3 {
+  margin: 0;
+}
+
+.service-detail p {
+  max-width: 610px;
+}
+
+.services-callout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 88px;
+  margin-top: 46px;
+  padding: 34px 52px 30px;
+  background: #f2f0ea;
+}
+
+.services-callout > div + div {
+  padding-left: 88px;
+  border-left: 1px solid var(--border);
+}
+
+.services-callout h2 {
+  font-size: clamp(1.85rem, 2.3vw, 2.45rem);
+  line-height: 1.05;
+}
+
+.services-callout p {
+  max-width: 470px;
+}
+
+.services-callout p a {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--fast-black);
+  font: inherit;
+}
+
+.about-page {
+  width: calc(100% - (var(--page-gutter) * 2));
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 86px 0 72px;
+}
+
+.about-page-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.16fr) minmax(300px, 0.58fr);
+  gap: 76px;
+  align-items: start;
+}
+
+.about-page-copy {
+  max-width: 820px;
+}
+
+.about-page-copy h1,
+.about-page-sections h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.about-page-copy h1 {
+  margin-top: 28px;
+  font-size: clamp(3.4rem, 5vw, 5.2rem);
+  line-height: 1;
+}
+
+.about-page-copy .accent-rule {
+  margin: 32px 0 34px;
+}
+
+.about-name {
+  margin: 26px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.about-page-copy p:not(.kicker),
+.about-page-sections p,
+.about-page-sections li {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.78;
+}
+
+.about-page-copy p:not(.kicker) {
+  max-width: 560px;
+}
+
+.about-page-copy p:not(.kicker, .about-name) + p {
+  margin-top: 18px;
+}
+
+.about-page-portrait {
+  aspect-ratio: 1;
+  min-height: 460px;
+  border-radius: 50%;
+  background: url('/images/portrait.png') center 36% / cover no-repeat;
+}
+
+.about-page-sections {
+  display: grid;
+  grid-template-columns: 43% 57%;
+  gap: 72px;
+  margin-top: 74px;
+  padding-top: 42px;
+  border-top: 1px solid var(--border);
+}
+
+.about-page-sections article + article {
+  padding-left: 84px;
+  border-left: 1px solid var(--border);
+}
+
+.about-page-sections h2 {
+  color: var(--sage-green);
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.about-page-sections ul {
+  display: grid;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-page-sections li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 15px 0;
+  border-top: 1px solid var(--border);
+  font-size: 1rem;
+  line-height: 1.58;
+}
+
+.about-page-sections li::before {
+  width: 7px;
+  height: 7px;
+  margin-top: 0.65em;
+  content: '';
+  border-radius: 50%;
+  background: var(--sage-green);
+}
+
+.about-page-sections p {
+  max-width: 600px;
+  margin-top: 28px;
+}
+
+.about-page-sections article:last-child p {
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 2.4vw, 2.35rem);
+  line-height: 1.18;
+  letter-spacing: -0.045em;
+}
+
+.contact-page {
+  display: grid;
+  justify-items: end;
+  min-height: calc(100vh - 111px);
+  width: calc(100% - (var(--page-gutter) * 2));
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 64px 0 72px;
+}
+
+.contact-card {
+  align-self: start;
+  max-width: 520px;
+  text-align: right;
+}
+
+.contact-card h1 {
+  margin: 28px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 2.35vw, 2.45rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.contact-card .accent-rule {
+  margin: 26px 0 30px auto;
+}
+
+.contact-links {
+  display: grid;
+  justify-items: end;
+  gap: 12px;
+}
+
+.contact-links a {
+  width: fit-content;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--sage-green);
+  font-size: clamp(0.84rem, 1vw, 0.98rem);
+  font-weight: 450;
+  line-height: 1.25;
+  text-decoration: none;
 }
 
 .two-column-section {
@@ -543,6 +895,46 @@ a {
     min-height: 520px;
   }
 
+  .services-page {
+    padding-top: 68px;
+  }
+
+  .service-format,
+  .services-callout,
+  .about-page-hero,
+  .about-page-sections {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .service-format-main {
+    padding-right: 0;
+  }
+
+  .service-format-details,
+  .services-callout > div + div,
+  .about-page-sections article + article {
+    border-left: 0;
+  }
+
+  .service-detail,
+  .services-callout > div + div,
+  .about-page-sections article + article {
+    padding-left: 0;
+  }
+
+  .about-page {
+    padding-top: 68px;
+  }
+
+  .contact-page {
+    padding-top: 56px;
+  }
+
+  .about-page-portrait {
+    min-height: 460px;
+  }
+
   .problem-panel,
   .audit-image,
   .about-panel {
@@ -583,6 +975,49 @@ a {
 
   .hero-copy {
     padding: 56px 16px 48px;
+  }
+
+  .services-page {
+    width: min(100% - 32px, 1360px);
+    padding: 56px 0 44px;
+  }
+
+  .about-page {
+    width: min(100% - 32px, 1360px);
+    padding: 56px 0 44px;
+  }
+
+  .contact-page {
+    width: min(100% - 32px, 1360px);
+    padding: 56px 0 44px;
+  }
+
+  .services-intro h1 {
+    font-size: clamp(3.05rem, 14vw, 4.4rem);
+  }
+
+  .about-page-copy h1 {
+    font-size: clamp(3.05rem, 14vw, 4.4rem);
+  }
+
+  .contact-card h1 {
+    font-size: clamp(1.65rem, 8vw, 2.45rem);
+  }
+
+  .service-format {
+    padding: 34px 0 38px;
+  }
+
+  .service-format-main h2 {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  .services-callout {
+    padding: 28px 24px;
+  }
+
+  .about-page-portrait {
+    min-height: 380px;
   }
 
   .hero-copy h1 {

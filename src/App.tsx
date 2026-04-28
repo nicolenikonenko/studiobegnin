@@ -40,6 +40,72 @@ const topics = [
   },
 ]
 
+const serviceFormats = [
+  {
+    number: '01',
+    title: 'Fachvorträge',
+    subtitle: 'Orientierung für neue Perspektiven.',
+    text: 'Kompakte Impulse für ein gemeinsames Verständnis zentraler Steuerungsthemen im Architektur- und Planungsbüro.',
+    cta: 'Vortrag anfragen',
+    details: [
+      {
+        label: 'Geeignet für',
+        text: 'Büroinhaber:innen, Partner:innen, Projektleitungen, Netzwerke, Veranstaltungsthemen und interne Strategietage.',
+      },
+      {
+        label: 'Typische Themen',
+        text: 'Wie Büros wirtschaftliche, organisatorische und operative Fragen besser zusammenführen: Projekte, Honorare, Stunden, Rollen, Kapazitäten, Besprechungsformate und Entscheidungen.',
+      },
+      {
+        label: 'Ergebnis',
+        text: 'Ein gemeinsames Verständnis und eine Sprache für Steuerungsthemen im Büro.',
+      },
+    ],
+  },
+  {
+    number: '02',
+    title: 'Praxisworkshops',
+    subtitle: 'Klärung für konkrete Themen.',
+    text: 'Gemeinsam ein Steuerungsthema sortieren, Ursachen verstehen und eine praktikable Arbeitslogik entwickeln.',
+    cta: 'Workshop besprechen',
+    details: [
+      {
+        label: 'Geeignet für',
+        text: 'Büros mit einem klar erkennbaren Thema, aber noch ohne tragfähige Routine.',
+      },
+      {
+        label: 'Typische Themen',
+        text: 'Konkrete Arbeitsroutinen im Büroalltag: Projektbesprechungen, Zuständigkeiten, Rechnungs- und Nachtragsprozesse, Kapazitätsabstimmung, Maßnahmenverfolgung und Entscheidungswege.',
+      },
+      {
+        label: 'Ergebnis',
+        text: 'Eine konkrete Arbeitsgrundlage mit klaren Zusammenhängen, Zuständigkeiten und nächsten Schritten.',
+      },
+    ],
+  },
+  {
+    number: '03',
+    title: 'Büro-Klarheits-Audit & Beratung',
+    subtitle: 'Umsetzung für nachhaltige Steuerung.',
+    text: 'Strukturierte Einschätzung und Begleitung bei der Umsetzung einer belastbaren Bürosteuerung.',
+    cta: 'Audit kennenlernen',
+    details: [
+      {
+        label: 'Geeignet für',
+        text: 'Büros, die ihre Steuerungsfähigkeit gesamthaft prüfen und priorisierte nächste Schritte ableiten möchten.',
+      },
+      {
+        label: 'Typische Themen',
+        text: 'Das Zusammenspiel von Bürostruktur, Projektsteuerung, Verantwortung, Kapazität, Liquidität, Honorarlogik, Managementroutinen und internen Abläufen.',
+      },
+      {
+        label: 'Ergebnis',
+        text: 'Audit-Report mit Einschätzung, Handlungsfeldern und einem klaren Fahrplan für die Umsetzung.',
+      },
+    ],
+  },
+]
+
 function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
 
@@ -67,8 +133,16 @@ function App() {
   if (currentPage) {
     return (
       <main className="page-shell">
-        <SiteHeader navigate={navigate} />
-        <section className="empty-page" aria-label={currentPage.label}></section>
+        <SiteHeader navigate={navigate} currentPath={currentPath} />
+        {currentPage.path === '/leistungen' ? (
+          <ServicesPage navigate={navigate} />
+        ) : currentPage.path === '/ueber-mich' ? (
+          <AboutPage />
+        ) : currentPage.path === '/kontakt' ? (
+          <ContactPage />
+        ) : (
+          <section className="empty-page" aria-label={currentPage.label}></section>
+        )}
       </main>
     )
   }
@@ -76,7 +150,7 @@ function App() {
   return (
     <main className="page-shell">
       <section className="hero" id="top">
-        <SiteHeader navigate={navigate} />
+        <SiteHeader navigate={navigate} currentPath={currentPath} />
 
         <div className="hero-content">
           <div className="hero-copy">
@@ -231,9 +305,10 @@ function App() {
 
 type SiteHeaderProps = {
   navigate: (path: string) => (event: MouseEvent<HTMLAnchorElement>) => void
+  currentPath: string
 }
 
-function SiteHeader({ navigate }: SiteHeaderProps) {
+function SiteHeader({ navigate, currentPath }: SiteHeaderProps) {
   return (
     <header className="site-header" aria-label="Hauptnavigation">
       <a className="brand-lockup" href="/" onClick={navigate('/')} aria-label="Studio Benign Startseite">
@@ -242,10 +317,156 @@ function SiteHeader({ navigate }: SiteHeaderProps) {
       </a>
       <nav className="nav-links" aria-label="Seitennavigation">
         {pages.map((page) => (
-          <a href={page.path} onClick={navigate(page.path)} key={page.path}>{page.label}</a>
+          <a
+            className={currentPath === page.path ? 'is-active' : undefined}
+            href={page.path}
+            onClick={navigate(page.path)}
+            key={page.path}
+          >
+            {page.label}
+          </a>
         ))}
       </nav>
     </header>
+  )
+}
+
+type ServicesPageProps = {
+  navigate: (path: string) => (event: MouseEvent<HTMLAnchorElement>) => void
+}
+
+function ServicesPage({ navigate }: ServicesPageProps) {
+  return (
+    <section className="services-page" aria-labelledby="services-title">
+      <div className="services-intro">
+        <p className="kicker">Leistungen</p>
+        <h1 id="services-title">
+          Drei Formate.<br />
+          Für bessere Bürosteuerung.
+        </h1>
+        <span className="accent-rule" aria-hidden="true"></span>
+        <p>
+          Studio Benign arbeitet mit drei Leistungsformaten, die sich in Tiefe und Ziel
+          unterscheiden — je nach Ausgangslage, Fragestellung und gewünschtem Einstieg.
+        </p>
+      </div>
+
+      <div className="service-format-list">
+        {serviceFormats.map((format) => (
+          <article className="service-format" key={format.number}>
+            <div className="service-format-main">
+              <span className="service-number">{format.number}</span>
+              <h2>{format.title}</h2>
+              <p className="service-subtitle">{format.subtitle}</p>
+              <p>{format.text}</p>
+              <a href="/kontakt" onClick={navigate('/kontakt')}>
+                {format.cta} <span>→</span>
+              </a>
+            </div>
+
+            <div className="service-format-details">
+              {format.details.map((detail) => (
+                <div className="service-detail" key={detail.label}>
+                  <h3>{detail.label}</h3>
+                  <p>{detail.text}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <aside className="services-callout">
+        <div>
+          <h2>Welches Format passt zu Ihrem Büro?</h2>
+          <span className="accent-rule" aria-hidden="true"></span>
+          <p>
+            In einem unverbindlichen Erstgespräch klären wir gemeinsam, welcher Einstieg
+            für Ihre aktuelle Situation sinnvoll ist.
+          </p>
+          <a href="/kontakt" onClick={navigate('/kontakt')}>
+            Erstgespräch vereinbaren <span>→</span>
+          </a>
+        </div>
+        <div>
+          <p>
+            Mehr über Arbeitsweise, Erfahrung und Hintergrund erfahren Sie
+          </p>
+          <a href="/ueber-mich" onClick={navigate('/ueber-mich')}>
+            Über mich <span>→</span>
+          </a>
+        </div>
+      </aside>
+    </section>
+  )
+}
+
+function AboutPage() {
+  return (
+    <section className="about-page" aria-labelledby="about-title">
+      <div className="about-page-hero">
+        <div className="about-page-copy">
+          <p className="kicker">Über mich</p>
+          <p className="about-name">Nicole Lilly Nikonenko</p>
+          <h1 id="about-title">
+            Aus der Büropraxis.<br />
+            Mit Verständnis für Architektur.<br />
+            Und Blick für Zahlen.
+          </h1>
+          <span className="accent-rule" aria-hidden="true"></span>
+          <p>
+            Meine Arbeit verbindet Architekturpraxis, Finanzen, Controlling,
+            Betriebswirtschaft, Forschung und Lehre. Ich kenne Architektur- und
+            Planungsbüros aus der fachlichen Arbeit, aus der wirtschaftlichen Steuerung
+            und aus der Vermittlung komplexer Zusammenhänge.
+          </p>
+          <p>
+            Studio Benign setzt dort an, wo Bürorealität entsteht: bei Projekten,
+            Honoraren, Stunden, Rechnungen, Kapazitäten, Verantwortlichkeiten und
+            Entscheidungen.
+          </p>
+        </div>
+        <div className="about-page-portrait" aria-label="Portrait"></div>
+      </div>
+
+      <div className="about-page-sections">
+        <article>
+          <h2>Fachlicher Hintergrund</h2>
+          <ul>
+            <li>Masterstudium Architektur</li>
+            <li>Promotion in Urban Design</li>
+            <li>Bachelorstudium Betriebswirtschaft</li>
+            <li>7 Jahre Erfahrung in Architekturpraxis, Finance Management, Controlling und Büroorganisation</li>
+            <li>Lehrtätigkeit in Architekturtheorie, Baubetriebswirtschaft und Controlling</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Was daraus entsteht</h2>
+          <p>
+            Eine Beratung, die Architektur- und Planungsbüros nicht nur über Zahlen
+            betrachtet, sondern über Projekte, Routinen, Verantwortlichkeiten und
+            Entscheidungen.
+          </p>
+        </article>
+      </div>
+    </section>
+  )
+}
+
+function ContactPage() {
+  return (
+    <section className="contact-page" aria-labelledby="contact-title">
+      <div className="contact-card">
+        <p className="kicker">Kontakt</p>
+        <h1 id="contact-title">Nicole Lilly Nikonenko</h1>
+        <span className="accent-rule" aria-hidden="true"></span>
+        <div className="contact-links">
+          <a href="mailto:nicolenikonenko@gmail.com">nicolenikonenko@gmail.com</a>
+          <a href="tel:+436706074388">+43 6706074388</a>
+        </div>
+      </div>
+    </section>
   )
 }
 
