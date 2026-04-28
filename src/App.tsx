@@ -195,6 +195,7 @@ function App() {
         ) : (
           <section className="empty-page" aria-label={currentPage.label}></section>
         )}
+        <SiteFooter navigate={navigate} />
       </main>
     )
   }
@@ -312,7 +313,7 @@ function App() {
             Wo Ihr Büro heute steht, welche Steuerungsfragen besonders drängen und ob ein
             Klarheits-Audit der richtige erste Schritt ist.
           </p>
-          <a className="button primary" href="mailto:hallo@studiobenign.com?subject=Erstgespräch%20Studio%20Benign">
+          <a className="button primary" href="mailto:nicolenikonenko@gmail.com?subject=Erstgespräch%20Studio%20Benign">
             Erstgespräch vereinbaren <span>→</span>
           </a>
         </article>
@@ -320,37 +321,7 @@ function App() {
 
       <section className="knowledge-anchor" id="wissen" aria-label="Wissen"></section>
 
-      <footer className="site-footer">
-        <div>
-          <span className="wordmark">Studio Benign</span>
-          <p>Bürosteuerung für Architektur- und Planungsbüros</p>
-          <p>Klarheit in Zahlen.<br />Struktur im Alltag.<br />Spielraum für gute Architektur.</p>
-          <small>Studio Benign 2026</small>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          {pages.map((page) => (
-            <a href={page.path} onClick={navigate(page.path)} key={page.path}>{page.label}</a>
-          ))}
-        </div>
-        <div>
-          <h4>Wissen</h4>
-          <a href="/wissen" onClick={navigate('/wissen')}>Artikel</a>
-          <a href="/wissen" onClick={navigate('/wissen')}>Vorlagen</a>
-          <a href="/wissen" onClick={navigate('/wissen')}>Impulse für Büros</a>
-          <a href="/wissen" onClick={navigate('/wissen')}>Report-Beispiele</a>
-        </div>
-        <div>
-          <h4>Kontakt</h4>
-          <a href="mailto:hallo@studiobenign.com">hallo@studiobenign.com</a>
-          <a href="tel:+436706074388">+43 6706074388</a>
-          <span>INNSBRUCK</span>
-        </div>
-        <div className="legal-links">
-          <a href="/kontakt" onClick={navigate('/kontakt')}>Impressum</a>
-          <a href="/kontakt" onClick={navigate('/kontakt')}>Datenschutz</a>
-        </div>
-      </footer>
+      <SiteFooter navigate={navigate} />
     </main>
   )
 }
@@ -380,6 +351,46 @@ function SiteHeader({ navigate, currentPath }: SiteHeaderProps) {
         ))}
       </nav>
     </header>
+  )
+}
+
+type SiteFooterProps = {
+  navigate: (path: string) => (event: MouseEvent<HTMLAnchorElement>) => void
+}
+
+function SiteFooter({ navigate }: SiteFooterProps) {
+  return (
+    <footer className="site-footer">
+      <div>
+        <span className="wordmark">Studio Benign</span>
+        <p>Bürosteuerung für Architektur- und Planungsbüros</p>
+        <p>Klarheit in Zahlen.<br />Struktur im Alltag.<br />Spielraum für gute Architektur.</p>
+        <small>Studio Benign 2026</small>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        {pages.map((page) => (
+          <a href={page.path} onClick={navigate(page.path)} key={page.path}>{page.label}</a>
+        ))}
+      </div>
+      <div>
+        <h4>Wissen</h4>
+        <a href="/wissen" onClick={navigate('/wissen')}>Artikel</a>
+        <a href="/wissen" onClick={navigate('/wissen')}>Vorlagen</a>
+        <a href="/wissen" onClick={navigate('/wissen')}>Impulse für Büros</a>
+        <a href="/wissen" onClick={navigate('/wissen')}>Report-Beispiele</a>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <a href="mailto:nicolenikonenko@gmail.com">nicolenikonenko@gmail.com</a>
+        <a href="tel:+436706074388">+43 6706074388</a>
+        <span>INNSBRUCK</span>
+      </div>
+      <div className="legal-links">
+        <a href="/kontakt" onClick={navigate('/kontakt')}>Impressum</a>
+        <a href="/kontakt" onClick={navigate('/kontakt')}>Datenschutz</a>
+      </div>
+    </footer>
   )
 }
 
