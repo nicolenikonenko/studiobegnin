@@ -1,4 +1,13 @@
+import { type MouseEvent, useEffect, useState } from 'react'
 import './App.css'
+
+const pages = [
+  { path: '/ansatz', label: 'Ansatz' },
+  { path: '/leistungen', label: 'Leistungen' },
+  { path: '/wissen', label: 'Wissen' },
+  { path: '/ueber-mich', label: 'Über mich' },
+  { path: '/kontakt', label: 'Kontakt' },
+]
 
 const problems = [
   'Viele Informationen sind vorhanden, aber sie ergeben noch kein gemeinsames Steuerungsbild.',
@@ -32,36 +41,59 @@ const topics = [
 ]
 
 function App() {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname)
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname)
+    }
+
+    window.addEventListener('popstate', handlePopState)
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [])
+
+  const navigate = (path: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    window.history.pushState({}, '', path)
+    setCurrentPath(path)
+    window.scrollTo(0, 0)
+  }
+
+  const currentPage = pages.find((page) => page.path === currentPath)
+
+  if (currentPage) {
+    return (
+      <main className="page-shell">
+        <SiteHeader navigate={navigate} />
+        <section className="empty-page" aria-label={currentPage.label}></section>
+      </main>
+    )
+  }
+
   return (
     <main className="page-shell">
       <section className="hero" id="top">
-        <header className="site-header" aria-label="Hauptnavigation">
-          <a className="brand-lockup" href="#top" aria-label="Studio Benign Startseite">
-            <span className="wordmark">Studio Benign</span>
-            <span>Bürosteuerung für Architektur- und Planungsbüros</span>
-          </a>
-          <nav className="nav-links" aria-label="Seitennavigation">
-            <a href="#ansatz">Ansatz</a>
-            <a href="#leistungen">Leistungen</a>
-            <a href="#wissen">Wissen</a>
-            <a href="#ueber-mich">Über mich</a>
-            <a href="#kontakt">Kontakt</a>
-          </nav>
-          <a className="nav-cta" href="#kontakt">Erstgespräch <span>→</span></a>
-        </header>
+        <SiteHeader navigate={navigate} />
 
         <div className="hero-content">
           <div className="hero-copy">
-            <h1>Klarheit in Zahlen. Struktur im Alltag. Spielraum für gute <em>Architektur.</em></h1>
+            <h1>
+              Klarheit in Zahlen.<br />
+              Struktur im Alltag.<br />
+              Spielraum für gute<br />
+              <em>Architektur.</em>
+            </h1>
             <span className="accent-rule" aria-hidden="true"></span>
             <p>
               Ich unterstütze Architektur- und Planungsbüros dabei, ihre wirtschaftliche,
-              organisatorische und operative Steuerung so zu ordnen, dass Projekte,
-              Kapazitäten und Entscheidungen besser zusammenfinden.
+              organisatorische und operative Steuerung belastbarer zu strukturieren.
             </p>
             <div className="button-row">
-              <a className="button primary" href="#leistungen">Leistungen ansehen <span>→</span></a>
-              <a className="button ghost" href="#ansatz">Ansatz ansehen <span>→</span></a>
+              <a className="button primary" href="/leistungen" onClick={navigate('/leistungen')}>Leistungen <span>→</span></a>
+              <a className="button ghost" href="/ansatz" onClick={navigate('/ansatz')}>Ansatz ansehen <span>→</span></a>
             </div>
           </div>
           <div className="image-placeholder hero-image" aria-label="Editoriales Stillleben-Bildplatzhalter">
@@ -76,13 +108,12 @@ function App() {
           <p className="kicker">Was Sie bekommen</p>
           <h2>Steuerbarkeit, Überblick &amp; mehr Sicherheit in Entscheidungen.</h2>
           <p>
-            Nicht jedes Büro braucht mehr Kontrolle. Viele Büros brauchen vor allem
-            bessere Zusammenhänge zwischen Honorar, Stunden, Projektstand, Liquidität,
-            Kapazität und Verantwortung.
+            Nicht jedes Büro braucht mehr Kontrolle. Viele Büros brauchen klarere
+            Zusammenhänge zwischen Projekten, Kapazitäten, Verantwortung und Entscheidungen.
           </p>
           <p>
-            Studio Benign macht diese Zusammenhänge sichtbar und übersetzt sie in eine
-            klare Arbeitsgrundlage für Führung, Projektleitung und Büroorganisation.
+            Studio Benign macht diese Zusammenhänge sichtbar — als Arbeitsgrundlage für
+            Führung, Projektleitung und Büroorganisation.
           </p>
         </article>
         <article className="problem-panel">
@@ -118,7 +149,7 @@ function App() {
             und führen von der Standortbestimmung in konkrete Routinen für Projekte,
             Honorare, Rechnungen, Liquidität, Kapazitäten und Verantwortlichkeiten.
           </p>
-          <a className="button primary" href="#kontakt">Leistungen ansehen <span>→</span></a>
+          <a className="button primary" href="/kontakt" onClick={navigate('/kontakt')}>Leistungen ansehen <span>→</span></a>
         </article>
         <div className="image-placeholder audit-image" aria-label="Audit-Report-Bildplatzhalter">
           {/* Replace with audit report image: cover, matrix, score page and priorities. */}
@@ -146,7 +177,7 @@ function App() {
             Die Arbeit verbindet architektonisches Verständnis mit wirtschaftlicher Analyse
             und organisatorischer Klarheit — für den realen Büroalltag.
           </p>
-          <a href="#ansatz">Mehr über den Ansatz →</a>
+          <a href="/ansatz" onClick={navigate('/ansatz')}>Mehr über den Ansatz →</a>
         </article>
         <article className="contact-panel" id="kontakt">
           <p className="kicker">Lassen Sie uns sprechen</p>
@@ -172,18 +203,16 @@ function App() {
         </div>
         <div>
           <h4>Navigation</h4>
-          <a href="#ansatz">Ansatz</a>
-          <a href="#leistungen">Leistungen</a>
-          <a href="#wissen">Wissen</a>
-          <a href="#ueber-mich">Über mich</a>
-          <a href="#kontakt">Kontakt</a>
+          {pages.map((page) => (
+            <a href={page.path} onClick={navigate(page.path)} key={page.path}>{page.label}</a>
+          ))}
         </div>
         <div>
           <h4>Wissen</h4>
-          <a href="#wissen">Artikel</a>
-          <a href="#wissen">Vorlagen</a>
-          <a href="#wissen">Impulse für Büros</a>
-          <a href="#wissen">Report-Beispiele</a>
+          <a href="/wissen" onClick={navigate('/wissen')}>Artikel</a>
+          <a href="/wissen" onClick={navigate('/wissen')}>Vorlagen</a>
+          <a href="/wissen" onClick={navigate('/wissen')}>Impulse für Büros</a>
+          <a href="/wissen" onClick={navigate('/wissen')}>Report-Beispiele</a>
         </div>
         <div>
           <h4>Kontakt</h4>
@@ -192,11 +221,31 @@ function App() {
           <span>INNSBRUCK</span>
         </div>
         <div className="legal-links">
-          <a href="#kontakt">Impressum</a>
-          <a href="#kontakt">Datenschutz</a>
+          <a href="/kontakt" onClick={navigate('/kontakt')}>Impressum</a>
+          <a href="/kontakt" onClick={navigate('/kontakt')}>Datenschutz</a>
         </div>
       </footer>
     </main>
+  )
+}
+
+type SiteHeaderProps = {
+  navigate: (path: string) => (event: MouseEvent<HTMLAnchorElement>) => void
+}
+
+function SiteHeader({ navigate }: SiteHeaderProps) {
+  return (
+    <header className="site-header" aria-label="Hauptnavigation">
+      <a className="brand-lockup" href="/" onClick={navigate('/')} aria-label="Studio Benign Startseite">
+        <span className="wordmark">Studio Benign</span>
+        <span>Bürosteuerung für Architektur- und Planungsbüros</span>
+      </a>
+      <nav className="nav-links" aria-label="Seitennavigation">
+        {pages.map((page) => (
+          <a href={page.path} onClick={navigate(page.path)} key={page.path}>{page.label}</a>
+        ))}
+      </nav>
+    </header>
   )
 }
 
