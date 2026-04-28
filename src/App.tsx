@@ -1,12 +1,11 @@
 import './App.css'
 
 const problems = [
-  'Projekte laufen, aber der wirtschaftliche Stand ist nicht eindeutig.',
-  'Stunden werden erfasst, aber selten konsequent mit Honorar, Leistungsstand und Forecast verbunden.',
-  'Nachträge, Zusatzleistungen oder offene Stunden sind fachlich bekannt, aber organisatorisch nicht sauber nachverfolgt.',
-  'Die Auslastung ist hoch, trotzdem bleibt unklar, welche Projekte tatsächlich tragen.',
-  'Liquidität wird beobachtet, aber nicht immer früh genug mit Rechnungsstellung, offenen Forderungen und Projektfortschritt verknüpft.',
-  'Verantwortlichkeiten sind im Alltag oft gewachsen, aber nicht klar genug verteilt.',
+  'Viele Informationen sind vorhanden, aber sie ergeben noch kein gemeinsames Steuerungsbild.',
+  'Projektstände, Honorare und Stunden werden nicht immer im gleichen Zusammenhang betrachtet.',
+  'Rechnungsstellung, offene Leistungen und Liquidität werden eher nachgeführt als aktiv gesteuert.',
+  'Kapazitäten, Rollen und Verantwortlichkeiten sind im Alltag gewachsen, aber nicht immer klar genug geordnet.',
+  'Besprechungen klären vieles kurzfristig, ersetzen aber keine verlässliche Managementroutine.',
 ]
 
 const topics = [
@@ -43,10 +42,9 @@ function App() {
           </a>
           <nav className="nav-links" aria-label="Seitennavigation">
             <a href="#ansatz">Ansatz</a>
-            <a href="#audit">Klarheits-Audit</a>
-            <a href="#themen">Themen</a>
-            <a href="#ueber-mich">Über mich</a>
+            <a href="#leistungen">Leistungen</a>
             <a href="#wissen">Wissen</a>
+            <a href="#ueber-mich">Über mich</a>
             <a href="#kontakt">Kontakt</a>
           </nav>
           <a className="nav-cta" href="#kontakt">Erstgespräch <span>→</span></a>
@@ -62,7 +60,7 @@ function App() {
               Kapazitäten und Entscheidungen besser zusammenfinden.
             </p>
             <div className="button-row">
-              <a className="button primary" href="#audit">Klarheits-Audit kennenlernen <span>→</span></a>
+              <a className="button primary" href="#leistungen">Leistungen ansehen <span>→</span></a>
               <a className="button ghost" href="#ansatz">Ansatz ansehen <span>→</span></a>
             </div>
           </div>
@@ -110,7 +108,7 @@ function App() {
         </div>
       </section>
 
-      <section className="audit-strip" id="audit">
+      <section className="audit-strip" id="leistungen">
         <article className="audit-copy">
           <p className="kicker">Leistungen</p>
           <h2>Drei Zugänge zu besserer Bürosteuerung.</h2>
@@ -163,9 +161,7 @@ function App() {
         </article>
       </section>
 
-      <section className="knowledge-anchor" id="wissen" aria-label="Wissen">
-        <span>Wissen: Artikel, Vorlagen, Impulse für Büros und Report-Beispiele.</span>
-      </section>
+      <section className="knowledge-anchor" id="wissen" aria-label="Wissen"></section>
 
       <footer className="site-footer">
         <div>
@@ -177,10 +173,9 @@ function App() {
         <div>
           <h4>Navigation</h4>
           <a href="#ansatz">Ansatz</a>
-          <a href="#audit">Klarheits-Audit</a>
-          <a href="#themen">Themen</a>
-          <a href="#ueber-mich">Über mich</a>
+          <a href="#leistungen">Leistungen</a>
           <a href="#wissen">Wissen</a>
+          <a href="#ueber-mich">Über mich</a>
           <a href="#kontakt">Kontakt</a>
         </div>
         <div>
