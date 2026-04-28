@@ -238,8 +238,24 @@ a {
   padding: 86px 0 64px;
 }
 
+.services-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(460px, 0.72fr);
+  gap: 72px;
+  align-items: start;
+}
+
 .services-intro {
   max-width: 720px;
+}
+
+.services-hero-image {
+  width: 100%;
+  max-width: 660px;
+  aspect-ratio: 1.28;
+  justify-self: end;
+  object-fit: cover;
+  object-position: center;
 }
 
 .services-intro h1,
@@ -406,8 +422,8 @@ a {
 
 .about-page-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.16fr) minmax(300px, 0.58fr);
-  gap: 76px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.44fr);
+  gap: 48px;
   align-items: start;
 }
 
@@ -460,10 +476,12 @@ a {
 }
 
 .about-page-portrait {
-  aspect-ratio: 1;
-  min-height: 460px;
-  border-radius: 50%;
-  background: url('/images/portrait.png') center 36% / cover no-repeat;
+  aspect-ratio: 4 / 5;
+  width: min(100%, 390px);
+  min-height: 0;
+  margin-top: 88px;
+  justify-self: start;
+  background: url('/images/portrait.png') 24% 36% / cover no-repeat;
 }
 
 .about-page-sections {
@@ -901,10 +919,16 @@ a {
 
   .service-format,
   .services-callout,
+  .services-hero,
   .about-page-hero,
   .about-page-sections {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .services-hero-image {
+    justify-self: start;
+    max-width: 380px;
   }
 
   .service-format-main {
@@ -994,6 +1018,10 @@ a {
 
   .services-intro h1 {
     font-size: clamp(3.05rem, 14vw, 4.4rem);
+  }
+
+  .services-hero-image {
+    max-width: 100%;
   }
 
   .about-page-copy h1 {

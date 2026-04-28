@@ -338,17 +338,20 @@ type ServicesPageProps = {
 function ServicesPage({ navigate }: ServicesPageProps) {
   return (
     <section className="services-page" aria-labelledby="services-title">
-      <div className="services-intro">
-        <p className="kicker">Leistungen</p>
-        <h1 id="services-title">
-          Drei Formate.<br />
-          Für bessere Bürosteuerung.
-        </h1>
-        <span className="accent-rule" aria-hidden="true"></span>
-        <p>
-          Studio Benign arbeitet mit drei Leistungsformaten, die sich in Tiefe und Ziel
-          unterscheiden — je nach Ausgangslage, Fragestellung und gewünschtem Einstieg.
-        </p>
+      <div className="services-hero">
+        <div className="services-intro">
+          <p className="kicker">Leistungen</p>
+          <h1 id="services-title">
+            Drei Formate.<br />
+            Für bessere Bürosteuerung.
+          </h1>
+          <span className="accent-rule" aria-hidden="true"></span>
+          <p>
+            Studio Benign arbeitet mit drei Leistungsformaten, die sich in Tiefe und Ziel
+            unterscheiden — je nach Ausgangslage, Fragestellung und gewünschtem Einstieg.
+          </p>
+        </div>
+        <img className="services-hero-image" src="/images/leistungen.png" alt="" />
       </div>
 
       <div className="service-format-list">
