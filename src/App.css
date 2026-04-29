@@ -54,8 +54,8 @@ a {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 42px;
+  grid-template-columns: 260px 1fr auto;
+  gap: 34px;
   align-items: start;
   width: calc(100% - (var(--page-gutter) * 2));
   margin: 0 auto;
@@ -103,6 +103,33 @@ a {
 
 .nav-links a.is-active {
   border-color: var(--fast-black);
+}
+
+.language-toggle {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  justify-self: end;
+  padding-top: 8px;
+  color: rgba(17, 17, 17, 0.48);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.language-toggle button {
+  appearance: none;
+  color: rgba(17, 17, 17, 0.48);
+  background: transparent;
+  border: 0;
+  padding: 0 0 7px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.language-toggle button.is-active {
+  color: var(--fast-black);
+  border-bottom: 1px solid var(--fast-black);
 }
 
 .nav-links a,
@@ -387,7 +414,7 @@ a {
 .approach-workflow article::before {
   position: absolute;
   top: 0;
-  right: 0;
+  right: clamp(120px, 18vw, 360px);
   left: 0;
   height: 1px;
   content: '';
@@ -1168,6 +1195,10 @@ a {
   .nav-links {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .language-toggle {
+    justify-self: start;
   }
 
   .nav-cta {
