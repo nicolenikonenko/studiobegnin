@@ -10,11 +10,11 @@ const pages = [
 ]
 
 const problems = [
-  'Viele Informationen sind vorhanden, aber sie ergeben noch kein gemeinsames Steuerungsbild.',
-  'Projektstände, Honorare und Stunden werden nicht immer im gleichen Zusammenhang betrachtet.',
-  'Rechnungsstellung, offene Leistungen und Liquidität werden eher nachgeführt als aktiv gesteuert.',
-  'Kapazitäten, Rollen und Verantwortlichkeiten sind im Alltag gewachsen, aber nicht immer klar genug geordnet.',
-  'Besprechungen klären vieles kurzfristig, ersetzen aber keine verlässliche Managementroutine.',
+  'Informationen sind vorhanden, aber sie kommen nicht immer zu einem gemeinsamen Bild zusammen.',
+  'Projekte, Kapazitäten und Zuständigkeiten werden oft parallel abgestimmt.',
+  'Entscheidungen entstehen im laufenden Alltag - zwischen Projektarbeit, Terminen, Rechnungen und Teamfragen.',
+  'Besprechungen klären vieles, brauchen aber verlässliche nächste Schritte.',
+  'Führung, Projektleitung und Büroorganisation benötigen dafür einen gemeinsamen Blick auf das, was ansteht.',
 ]
 
 const topics = [
@@ -234,11 +234,15 @@ function App() {
 
       <section className="two-column-section" id="ansatz">
         <article className="benefit-panel">
-          <p className="kicker">Was Sie bekommen</p>
-          <h2>Steuerbarkeit, Überblick &amp; mehr Sicherheit in Entscheidungen.</h2>
+          <p className="kicker">Worum es geht</p>
+          <h2>
+            Steuerbarkeit, Überblick &amp;<br />
+            mehr Sicherheit in<br />
+            Entscheidungen.
+          </h2>
           <p>
-            Nicht jedes Büro braucht mehr Kontrolle. Viele Büros brauchen klarere
-            Zusammenhänge zwischen Projekten, Kapazitäten, Verantwortung und Entscheidungen.
+            Viele Büros brauchen klarere Zusammenhänge zwischen Projekten, Kapazitäten,
+            Verantwortung und Entscheidungen.
           </p>
           <p>
             Studio Benign macht diese Zusammenhänge sichtbar - als Arbeitsgrundlage für
@@ -246,7 +250,7 @@ function App() {
           </p>
         </article>
         <article className="problem-panel">
-          <p className="kicker">Kennen Sie das?</p>
+          <p className="kicker">Aus dem Büroalltag</p>
           <ul>
             {problems.map((problem) => (
               <li key={problem}>{problem}</li>
@@ -271,12 +275,13 @@ function App() {
       <section className="audit-strip" id="leistungen">
         <article className="audit-copy">
           <p className="kicker">Leistungen</p>
-          <h2>Drei Zugänge zu besserer Bürosteuerung.</h2>
+          <h2>
+            Drei Zugänge zu besserer<br />
+            Bürosteuerung.
+          </h2>
           <p>
-            Fachvorträge schaffen Orientierung. Praxisworkshops sortieren konkrete
-            Steuerungsthemen. Beratungsaufträge beginnen mit dem Büro-Klarheits-Audit
-            und führen von der Standortbestimmung in konkrete Routinen für Projekte,
-            Honorare, Rechnungen, Liquidität, Kapazitäten und Verantwortlichkeiten.
+            Fachvorträge geben Orientierung. Praxisworkshops sortieren konkrete Themen.
+            Beratungsaufträge verbinden Analyse, Struktur und Umsetzung.
           </p>
           <a className="button primary" href="/kontakt" onClick={navigate('/kontakt')}>Leistungen ansehen <span>→</span></a>
         </article>
@@ -309,11 +314,13 @@ function App() {
           <a href="/ansatz" onClick={navigate('/ansatz')}>Mehr über den Ansatz →</a>
         </article>
         <article className="contact-panel" id="kontakt">
-          <p className="kicker">Lassen Sie uns sprechen</p>
-          <h2>Ein unverbindliches Erstgespräch klärt,</h2>
+          <p className="kicker">Nächster Schritt</p>
+          <h2>
+            Ein unverbindliches<br />
+            Erstgespräch klärt,
+          </h2>
           <p>
-            Wo Ihr Büro heute steht, welche Steuerungsfragen besonders drängen und ob ein
-            Klarheits-Audit der richtige erste Schritt ist.
+            welche Fragen aktuell im Vordergrund stehen und welcher Einstieg sinnvoll ist.
           </p>
           <a className="button primary" href="mailto:nicolenikonenko@gmail.com?subject=Erstgespräch%20Studio%20Benign">
             Erstgespräch vereinbaren <span>→</span>
@@ -545,7 +552,7 @@ function AboutPage() {
           <p>
             Meine fachliche Perspektive entsteht aus einer ungewöhnlichen Verbindung:
             Architekturstudium und Planungspraxis, betriebswirtschaftliche Ausbildung,
-            Promotion in Architekturtheorie sowie mehrjährige Erfahrung in Finance
+            Promotion in Urban Design sowie mehrjährige Erfahrung in Finance
             Management, Controlling und Büroorganisation.
           </p>
           <p>
@@ -572,7 +579,7 @@ function AboutPage() {
             </li>
             <li>
               <h3>Wirtschaft &amp; Steuerung</h3>
-              <p>Bachelorstudium Betriebswirtschaft sowie mehrjährige Erfahrung in Finance Management, Controlling, Ressourcenplanung, Budgetsplanung und Büroorganisation.</p>
+              <p>Bachelorstudium Betriebswirtschaft sowie mehrjährige Erfahrung in Finance Management, Controlling, Ressourcenplanung, Budgetplanung und Büroorganisation.</p>
             </li>
             <li>
               <h3>Urban Design &amp; Architekturtheorie</h3>
@@ -605,6 +612,10 @@ function ContactPage() {
         <h1 id="contact-title">Nicole Lilly Nikonenko</h1>
         <p className="contact-credentials">Dipl.-Ing., PhD, BBA</p>
         <span className="accent-rule" aria-hidden="true"></span>
+        <p className="contact-note">
+          Für Fragen, Anfragen oder ein erstes Gespräch erreichen Sie mich gerne per
+          E-Mail oder Telefon.
+        </p>
         <div className="contact-links">
           <a href="mailto:nicolenikonenko@gmail.com">nicolenikonenko@gmail.com</a>
           <a href="tel:+436706074388">+43 6706074388</a>
