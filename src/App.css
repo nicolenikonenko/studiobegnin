@@ -371,24 +371,40 @@ a {
 .approach-workflow > div {
   display: grid;
   gap: 0;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .approach-workflow article {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(140px, 180px) minmax(0, 1fr);
   gap: clamp(24px, 3vw, 44px);
   padding: 22px 0;
-  border-top: 1px solid var(--border);
+  min-width: 0;
+}
+
+.approach-workflow article::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  content: '';
+  background: var(--border);
 }
 
 .approach-workflow article p {
-  max-width: 680px;
+  max-width: 520px;
   overflow-wrap: break-word;
 }
 
 .approach-workflow article:first-child {
   padding-top: 0;
-  border-top: 0;
+}
+
+.approach-workflow article:first-child::before {
+  display: none;
 }
 
 .approach-workflow article:last-child {
