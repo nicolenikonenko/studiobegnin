@@ -21,22 +21,22 @@ const topics = [
   {
     number: '01',
     title: 'Wirtschaftliche Transparenz',
-    text: 'Zahlen nicht nur sammeln, sondern verstehen: BWA, Projektstände, offene Leistungen, Liquidität und Aufwand werden zu belastbaren Entscheidungsgrundlagen.',
+    text: 'Informationen werden so eingeordnet, dass Entscheidungen, Prioritäten und nächste Schritte klarer werden.',
   },
   {
     number: '02',
-    title: 'Projektcontrolling mit Logik',
-    text: 'Honorare, Stunden, Nachträge, Leistungsstände und Forecasts werden so betrachtet, dass Risiken früher sichtbar und Maßnahmen konkreter werden.',
+    title: 'Projektsteuerung',
+    text: 'Projekte werden fachlich, wirtschaftlich und organisatorisch lesbar - mit Blick auf Leistung, Aufwand und Handlungsbedarf.',
   },
   {
     number: '03',
-    title: 'Kapazitäten realistisch planen',
-    text: 'Einsatzplanung wird mit Projektlage, Leistungsphasen, Termindruck und verfügbaren Stunden abgeglichen, statt nur kurzfristig zu reagieren.',
+    title: 'Kapazität und Einsatz',
+    text: 'Projektlast, Termine und verfügbare Zeit werden zusammen betrachtet, damit Engpässe früher sichtbar werden.',
   },
   {
     number: '04',
     title: 'Verantwortung und Routinen',
-    text: 'Zuständigkeiten, Besprechungsformate und Entscheidungswege werden geklärt, damit Steuerung nicht an einzelnen Personen hängen bleibt.',
+    text: 'Zuständigkeiten, Besprechungen und nächste Schritte werden klarer geführt, damit Steuerung im Alltag verlässlicher wird.',
   },
 ]
 
@@ -45,28 +45,28 @@ const serviceFormats = [
     number: '01',
     title: 'Fachvorträge',
     subtitle: 'Orientierung für neue Perspektiven.',
-    text: 'Kompakte Impulse für ein gemeinsames Verständnis zentraler Steuerungsthemen im Architektur- und Planungsbüro.',
+    text: 'Kompakte Impulse zu wirtschaftlicher, organisatorischer und operativer Steuerung in Architektur- und Planungsbüros.',
     cta: 'Vortrag anfragen',
     details: [
       {
         label: 'Geeignet für',
-        text: 'Büroinhaber:innen, Partner:innen, Projektleitungen, Netzwerke, Veranstaltungsthemen und interne Strategietage.',
+        text: 'Büroinhaber:innen, Partner:innen, Projektleitungen, Kammern, Netzwerke, Hochschulen, Fachveranstaltungen und interne Strategietage.',
       },
       {
         label: 'Typische Themen',
-        text: 'Wie Büros wirtschaftliche, organisatorische und operative Fragen besser zusammenführen: Projekte, Honorare, Stunden, Rollen, Kapazitäten, Besprechungsformate und Entscheidungen.',
+        text: 'Bürosteuerung in der Planungspraxis, Baubetriebswirtschaft für Planer:innen, wirtschaftliches Denken im Büroalltag sowie die Schnittstelle von Projektarbeit, Abrechnung, Controlling und Büroorganisation.',
       },
       {
         label: 'Ergebnis',
-        text: 'Ein gemeinsames Verständnis und eine Sprache für Steuerungsthemen im Büro.',
+        text: 'Orientierung, gemeinsame Begriffe und ein klareres Verständnis für Steuerungsthemen im Büro.',
       },
     ],
   },
   {
     number: '02',
     title: 'Praxisworkshops',
-    subtitle: 'Klärung für konkrete Themen.',
-    text: 'Gemeinsam ein Steuerungsthema sortieren, Ursachen verstehen und eine praktikable Arbeitslogik entwickeln.',
+    subtitle: 'Klärung für konkrete Steuerungsthemen.',
+    text: 'Gemeinsam ein konkretes Steuerungsthema sortieren, Zusammenhänge sichtbar machen und eine praktikable Arbeitslogik entwickeln.',
     cta: 'Workshop besprechen',
     details: [
       {
@@ -75,7 +75,7 @@ const serviceFormats = [
       },
       {
         label: 'Typische Themen',
-        text: 'Konkrete Arbeitsroutinen im Büroalltag: Projektbesprechungen, Zuständigkeiten, Rechnungs- und Nachtragsprozesse, Kapazitätsabstimmung, Maßnahmenverfolgung und Entscheidungswege.',
+        text: 'Projektbesprechungen, Zuständigkeiten, Rechnungs- und Nachtragsroutinen, Kapazitätsabstimmung, Maßnahmenverfolgung und Entscheidungswege.',
       },
       {
         label: 'Ergebnis',
@@ -85,22 +85,22 @@ const serviceFormats = [
   },
   {
     number: '03',
-    title: 'Büro-Klarheits-Audit & Beratung',
-    subtitle: 'Umsetzung für nachhaltige Steuerung.',
-    text: 'Strukturierte Einschätzung und Begleitung bei der Umsetzung einer belastbaren Bürosteuerung.',
-    cta: 'Audit kennenlernen',
+    title: 'Beratungsauftrag & Umsetzungsbegleitung',
+    subtitle: 'Struktur für tragfähige Bürosteuerung.',
+    text: 'Analyse, Priorisierung und Begleitung beim Aufbau verlässlicher Steuerungsstrukturen. Das Büro-Klarheits-Audit bildet dabei den strukturierten Einstieg.',
+    cta: 'Beratungsauftrag besprechen',
     details: [
       {
         label: 'Geeignet für',
-        text: 'Büros, die ihre Steuerungsfähigkeit gesamthaft prüfen und priorisierte nächste Schritte ableiten möchten.',
+        text: 'Büros, die ihre wirtschaftliche, organisatorische und operative Steuerung gezielt weiterentwickeln möchten - mit klarem Blick auf Projekte, Verantwortung, Kapazitäten und Entscheidungen.',
       },
       {
         label: 'Typische Themen',
-        text: 'Das Zusammenspiel von Bürostruktur, Projektsteuerung, Verantwortung, Kapazität, Liquidität, Honorarlogik, Managementroutinen und internen Abläufen.',
+        text: 'Büro-Klarheits-Audit, Projektsteuerung, Honorar- und Stundenlogik, Rechnungs- und Liquiditätsroutinen, Kapazitätsplanung, Verantwortlichkeiten, Managementroutinen und interne Abläufe.',
       },
       {
         label: 'Ergebnis',
-        text: 'Audit-Report mit Einschätzung, Handlungsfeldern und einem klaren Fahrplan für die Umsetzung.',
+        text: 'Audit-Report, priorisierte Handlungsfelder, umsetzbarer Fahrplan und konkrete Routinen für den Büroalltag.',
       },
     ],
   },
@@ -108,27 +108,27 @@ const serviceFormats = [
 
 const approachSections = [
   {
+    number: '01',
     title: 'Was Bürosteuerung bedeutet',
     paragraphs: [
-      'Bürosteuerung heißt, wirtschaftliche, operative und organisatorische Zusammenhänge so sichtbar zu machen, dass Entscheidungen rechtzeitig und nachvollziehbar getroffen werden können.',
-      'Im Architektur- und Planungsbüro betrifft das nicht nur Zahlen. Es betrifft das Zusammenspiel von Projekten, Leistungsständen, Honoraren, Stunden, Rechnungen, offenen Leistungen, Liquidität, Kapazitäten und Verantwortlichkeiten.',
-      'Ein Büro ist steuerungsfähig, wenn nicht erst im Rückblick deutlich wird, welche Projekte wirtschaftlich getragen haben, welche Leistungen nicht abgerechnet wurden oder welche Personen dauerhaft überlastet waren.',
+      'Bürosteuerung macht wirtschaftliche, organisatorische und operative Zusammenhänge sichtbar. Sie verbindet Projekte, Kapazitäten, Verantwortung und Entscheidungen zu einem gemeinsamen Blick auf das Büro.',
+      'So entsteht Orientierung für Geschäftsführung, Projektleitung und Büroorganisation - nicht als zusätzliche Kontrolle, sondern als Grundlage für bessere Entscheidungen.',
     ],
   },
   {
-    title: 'Keine Softwareberatung',
+    number: '02',
+    title: 'Warum Zusammenhänge zählen',
     paragraphs: [
-      'Studio Benign beginnt nicht mit der Frage, welches Tool ein Büro braucht.',
-      'Software kann helfen, Informationen zugänglich zu machen. Sie ersetzt aber keine klare Steuerungslogik: Welche Informationen sind relevant? Wer pflegt sie? Wann werden sie besprochen? Wer entscheidet? Was passiert, wenn ein Projekt kippt?',
-      'Deshalb steht am Anfang nicht die Systemfrage, sondern die Führungsfrage.',
+      'Projektstände, Honorare, Stunden, Rechnungen, Kapazitäten und Verantwortlichkeiten haben nur begrenzten Wert, wenn sie nebeneinanderstehen.',
+      'Steuerungsfähigkeit entsteht, wenn daraus ein gemeinsames Bild des Büros wird.',
     ],
   },
   {
-    title: 'Keine klassische Controllingberatung',
+    number: '03',
+    title: 'Wie Struktur Führung entlastet',
     paragraphs: [
-      'Controlling im Architektur- und Planungsbüro darf nicht bei Auswertungen stehen bleiben.',
-      'Eine BWA, eine Stundenliste oder eine Projektübersicht entfalten erst dann Wirkung, wenn sie in den Büroalltag übersetzt werden: in Projektbesprechungen, Rechnungsroutinen, Kapazitätsplanung, Nachtragsklärung und Verantwortlichkeiten.',
-      'Studio Benign betrachtet Zahlen deshalb nicht isoliert, sondern im Zusammenhang mit Projektlogik, Leistungsphasen, Honorarstruktur, Büroorganisation und Entscheidungspraxis.',
+      'Führung im Planungsbüro findet oft parallel zum Projektalltag statt: zwischen Bauherrenabstimmungen, Teamfragen, Rechnungen, Terminen, Kapazitäten und kurzfristigen Entscheidungen.',
+      'Gute Strukturen geben diesen Themen einen festen Ort. Sie schaffen Übersicht, klären Verantwortlichkeiten und machen nächste Schritte nachvollziehbar - ohne den Büroalltag unnötig zu verkomplizieren.',
     ],
   },
 ]
@@ -192,6 +192,8 @@ function App() {
           <AboutPage />
         ) : currentPage.path === '/kontakt' ? (
           <ContactPage />
+        ) : currentPage.path === '/wissen' ? (
+          <KnowledgePage />
         ) : (
           <section className="empty-page" aria-label={currentPage.label}></section>
         )}
@@ -239,7 +241,7 @@ function App() {
             Zusammenhänge zwischen Projekten, Kapazitäten, Verantwortung und Entscheidungen.
           </p>
           <p>
-            Studio Benign macht diese Zusammenhänge sichtbar — als Arbeitsgrundlage für
+            Studio Benign macht diese Zusammenhänge sichtbar - als Arbeitsgrundlage für
             Führung, Projektleitung und Büroorganisation.
           </p>
         </article>
@@ -302,7 +304,7 @@ function App() {
           </p>
           <p>
             Die Arbeit verbindet architektonisches Verständnis mit wirtschaftlicher Analyse
-            und organisatorischer Klarheit — für den realen Büroalltag.
+            und organisatorischer Klarheit - für den realen Büroalltag.
           </p>
           <a href="/ansatz" onClick={navigate('/ansatz')}>Mehr über den Ansatz →</a>
         </article>
@@ -368,19 +370,6 @@ function SiteFooter({ navigate }: SiteFooterProps) {
         <small>Studio Benign 2026</small>
       </div>
       <div>
-        <h4>Navigation</h4>
-        {pages.map((page) => (
-          <a href={page.path} onClick={navigate(page.path)} key={page.path}>{page.label}</a>
-        ))}
-      </div>
-      <div>
-        <h4>Wissen</h4>
-        <a href="/wissen" onClick={navigate('/wissen')}>Artikel</a>
-        <a href="/wissen" onClick={navigate('/wissen')}>Vorlagen</a>
-        <a href="/wissen" onClick={navigate('/wissen')}>Impulse für Büros</a>
-        <a href="/wissen" onClick={navigate('/wissen')}>Report-Beispiele</a>
-      </div>
-      <div>
         <h4>Kontakt</h4>
         <a href="mailto:nicolenikonenko@gmail.com">nicolenikonenko@gmail.com</a>
         <a href="tel:+436706074388">+43 6706074388</a>
@@ -405,13 +394,15 @@ function ServicesPage({ navigate }: ServicesPageProps) {
         <div className="services-intro">
           <p className="kicker">Leistungen</p>
           <h1 id="services-title">
-            Drei Formate.<br />
-            Für bessere Bürosteuerung.
+            Drei Zugänge.<br />
+            Für bessere<br />
+            Bürosteuerung.
           </h1>
           <span className="accent-rule" aria-hidden="true"></span>
           <p>
-            Studio Benign arbeitet mit drei Leistungsformaten, die sich in Tiefe und Ziel
-            unterscheiden — je nach Ausgangslage, Fragestellung und gewünschtem Einstieg.
+            Studio Benign arbeitet mit drei Zugängen, die sich in Tiefe, Ziel und
+            Verbindlichkeit unterscheiden - je nach Ausgangslage, Fragestellung und
+            gewünschtem nächstem Schritt.
           </p>
         </div>
         <img className="services-hero-image" src="/images/leistungen.png" alt="" />
@@ -444,11 +435,11 @@ function ServicesPage({ navigate }: ServicesPageProps) {
 
       <aside className="services-callout">
         <div>
-          <h2>Welches Format passt zu Ihrem Büro?</h2>
+          <h2>Welcher Einstieg passt zu Ihrem Büro?</h2>
           <span className="accent-rule" aria-hidden="true"></span>
           <p>
-            In einem unverbindlichen Erstgespräch klären wir gemeinsam, welcher Einstieg
-            für Ihre aktuelle Situation sinnvoll ist.
+            In einem unverbindlichen Erstgespräch klären wir gemeinsam, welche Fragen
+            aktuell im Vordergrund stehen und welcher nächste Schritt sinnvoll ist.
           </p>
           <a href="/kontakt" onClick={navigate('/kontakt')}>
             Erstgespräch vereinbaren <span>→</span>
@@ -456,7 +447,7 @@ function ServicesPage({ navigate }: ServicesPageProps) {
         </div>
         <div>
           <p>
-            Mehr über Arbeitsweise, Erfahrung und Hintergrund erfahren Sie
+            Mehr über Arbeitsweise, Erfahrung und Hintergrund erfahren Sie hier:
           </p>
           <a href="/ueber-mich" onClick={navigate('/ueber-mich')}>
             Über mich <span>→</span>
@@ -473,27 +464,20 @@ function ApproachPage() {
       <div className="approach-intro">
         <p className="kicker">Ansatz</p>
         <h1 id="approach-title">
-          Bürosteuerung beginnt<br />
-          nicht bei Zahlen.<br />
-          Sondern bei Zusammenhängen.
+          Steuerungslogik schafft Orientierung.<br />
+          Struktur entlastet Führung.
         </h1>
         <span className="accent-rule" aria-hidden="true"></span>
         <div>
           <p>
-            Viele Architektur- und Planungsbüros verfügen bereits über zahlreiche
-            Informationen: Projektlisten, Stundenstände, Honorarvereinbarungen,
-            Rechnungen, offene Forderungen, Kapazitätsplanungen oder
-            betriebswirtschaftliche Auswertungen.
+            Architektur- und Planungsbüros führen komplexe Projekte, lange
+            Leistungszeiträume und viele parallele Abstimmungen zusammen. Damit Führung
+            im Alltag nicht nur reagiert, braucht es klare Zusammenhänge, wiederholbare
+            Routinen und verlässliche Verantwortlichkeiten.
           </p>
-          <p>
-            Die eigentliche Herausforderung liegt oft nicht darin, noch mehr Daten zu
-            erfassen. Entscheidend ist, ob diese Informationen regelmäßig
-            zusammengeführt, richtig eingeordnet und für Entscheidungen genutzt werden.
-          </p>
-          <p>
-            Studio Benign unterstützt Architektur- und Planungsbüros dabei, aus
-            vorhandenen Informationen ein klares Steuerungsbild zu entwickeln — für
-            Geschäftsführung, Projektleitung und Büroorganisation.
+          <p className="approach-intro-followup">
+            Studio Benign entwickelt dafür tragfähige Steuerungsstrukturen: praxisnah,
+            architekturbürospezifisch und anschlussfähig an den realen Büroalltag.
           </p>
         </div>
       </div>
@@ -501,7 +485,9 @@ function ApproachPage() {
       <div className="approach-section-list">
         {approachSections.map((section) => (
           <article className="approach-section" key={section.title}>
-            <h2>{section.title}</h2>
+            <div className="approach-section-heading">
+              <h2>{section.title}</h2>
+            </div>
             <div>
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
@@ -527,17 +513,15 @@ function ApproachPage() {
         <h2 id="goal-title">Ziel</h2>
         <div>
           <p>
-            Das Ziel ist nicht einfach ein Controllingsystem und keine zusätzliche
-            Bürokratie.
+            Das Ziel ist ein Büro, das wirtschaftliche, organisatorische und operative
+            Zusammenhänge rechtzeitig erkennt, einordnet und in klare Entscheidungen
+            übersetzt.
           </p>
           <p>
-            Das Ziel ist ein Büro, das regelmäßig erkennen kann, welche Projekte stabil
-            laufen, wo Risiken entstehen, welche Leistungen nachverfolgt werden müssen,
-            welche Kapazitäten verfügbar sind und welche Entscheidungen anstehen.
-          </p>
-          <p>
-            So entsteht Steuerungsfähigkeit: nicht als Kontrolle von außen, sondern als
-            Entlastung für Geschäftsführung, Projektleitung und Büroorganisation.
+            Projekte werden bewusster geführt, Verantwortlichkeiten sind nachvollziehbar
+            und Kapazitäten realistisch einschätzbar. So entsteht Steuerungsfähigkeit:
+            als Grundlage für ruhigere Entscheidungen, klarere Prioritäten und eine
+            Büroorganisation, die fachliche Arbeit trägt.
           </p>
         </div>
       </section>
@@ -555,19 +539,24 @@ function AboutPage() {
           <h1 id="about-title">
             Aus der Büropraxis.<br />
             Mit Verständnis für Architektur.<br />
-            Und Blick für Zahlen.
+            Und Blick für Steuerung.
           </h1>
           <span className="accent-rule" aria-hidden="true"></span>
           <p>
-            Meine Arbeit verbindet Architekturpraxis, Finanzen, Controlling,
-            Betriebswirtschaft, Forschung und Lehre. Ich kenne Architektur- und
-            Planungsbüros aus der fachlichen Arbeit, aus der wirtschaftlichen Steuerung
-            und aus der Vermittlung komplexer Zusammenhänge.
+            Meine fachliche Perspektive entsteht aus einer ungewöhnlichen Verbindung:
+            Architekturstudium und Planungspraxis, betriebswirtschaftliche Ausbildung,
+            Promotion in Architekturtheorie sowie mehrjährige Erfahrung in Finance
+            Management, Controlling und Büroorganisation.
           </p>
           <p>
-            Studio Benign setzt dort an, wo Bürorealität entsteht: bei Projekten,
-            Honoraren, Stunden, Rechnungen, Kapazitäten, Verantwortlichkeiten und
-            Entscheidungen.
+            Ich kenne Architektur- und Planungsbüros aus unterschiedlichen Rollen: als
+            Architektin, als kaufmännisch mitverantwortliche Schnittstelle, als
+            Controllerin und als Dozentin für Architekturtheorie, Baubetriebswirtschaft
+            und Controlling.
+          </p>
+          <p>
+            Diese Kombination prägt meine Arbeit: analytisch, strukturiert, praxisnah
+            und mit Verständnis für die Realität kleiner und mittelgroßer Büros.
           </p>
         </div>
         <div className="about-page-portrait" aria-label="Portrait"></div>
@@ -577,20 +566,30 @@ function AboutPage() {
         <article>
           <h2>Fachlicher Hintergrund</h2>
           <ul>
-            <li>Masterstudium Architektur</li>
-            <li>Promotion in Urban Design</li>
-            <li>Bachelorstudium Betriebswirtschaft</li>
-            <li>7 Jahre Erfahrung in Architekturpraxis, Finance Management, Controlling und Büroorganisation</li>
-            <li>Lehrtätigkeit in Architekturtheorie, Baubetriebswirtschaft und Controlling</li>
+            <li>
+              <h3>Architektur &amp; Planungspraxis</h3>
+              <p>Masterstudium Architektur und praktische Erfahrung als Architektin. Vertraut mit Projektarbeit, Leistungsphasen, Abstimmungen und Büroalltag.</p>
+            </li>
+            <li>
+              <h3>Wirtschaft &amp; Steuerung</h3>
+              <p>Bachelorstudium Betriebswirtschaft sowie mehrjährige Erfahrung in Finance Management, Controlling, Ressourcenplanung, Budgetsplanung und Büroorganisation.</p>
+            </li>
+            <li>
+              <h3>Urban Design &amp; Architekturtheorie</h3>
+              <p>Promotion im Bereich Urban Design zur Frage, wie Architektur, Eigentumsverhältnisse und organisatorische Strukturen städtischen Raum prägen.</p>
+            </li>
+            <li>
+              <h3>Lehre &amp; Vermittlung</h3>
+              <p>Dozentin für Architekturtheorie, Baubetriebswirtschaft und Controlling. Erfahrung darin, komplexe Zusammenhänge verständlich und praxisnah zu vermitteln.</p>
+            </li>
           </ul>
         </article>
 
         <article>
           <h2>Was daraus entsteht</h2>
           <p>
-            Eine Beratung, die Architektur- und Planungsbüros nicht nur über Zahlen
-            betrachtet, sondern über Projekte, Routinen, Verantwortlichkeiten und
-            Entscheidungen.
+            Eine Beratungsperspektive, die Architektur versteht, wirtschaftliche
+            Zusammenhänge einordnet und gewachsene Bürostrukturen ernst nimmt.
           </p>
         </article>
       </div>
@@ -604,11 +603,29 @@ function ContactPage() {
       <div className="contact-card">
         <p className="kicker">Kontakt</p>
         <h1 id="contact-title">Nicole Lilly Nikonenko</h1>
+        <p className="contact-credentials">Dipl.-Ing., PhD, BBA</p>
         <span className="accent-rule" aria-hidden="true"></span>
         <div className="contact-links">
           <a href="mailto:nicolenikonenko@gmail.com">nicolenikonenko@gmail.com</a>
           <a href="tel:+436706074388">+43 6706074388</a>
         </div>
+      </div>
+    </section>
+  )
+}
+
+function KnowledgePage() {
+  return (
+    <section className="knowledge-page" aria-labelledby="knowledge-title">
+      <div className="knowledge-card">
+        <p className="kicker">Wissen</p>
+        <h1 id="knowledge-title">... wird bald folgen</h1>
+        <span className="accent-rule" aria-hidden="true"></span>
+        <ul>
+          <li>Vorlagen</li>
+          <li>Impulse für Büros</li>
+          <li>Report-Beispiele</li>
+        </ul>
       </div>
     </section>
   )
