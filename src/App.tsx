@@ -256,6 +256,193 @@ const content = {
       legal: ['Impressum', 'Datenschutz'],
       copyright: 'Studio Benign 2026',
     },
+    impressum: {
+      kicker: 'Impressum',
+      title: 'Angaben gemäß den gesetzlichen Informationspflichten',
+      blocks: [
+        {
+          title: 'Studio Benign',
+          paragraphs: ['Nicole Lilly Nikonenko\nStafflerstraße 10\n6020 Innsbruck\nÖsterreich'],
+        },
+        {
+          title: 'Kontakt',
+          paragraphs: ['E-Mail: nicolenikonenko@gmail.com\nWebsite: www.studiobenign.com'],
+        },
+        {
+          title: 'Verantwortlich für den Inhalt',
+          paragraphs: ['Nicole Lilly Nikonenko\nStafflerstraße 10\n6020 Innsbruck\nÖsterreich'],
+        },
+        {
+          title: 'Berufliche Tätigkeit',
+          paragraphs: [
+            'Studio Benign ist ein im Aufbau befindliches Beratungsangebot für Architektur- und Planungsbüros mit Schwerpunkt auf Bürosteuerung, wirtschaftlicher Transparenz, Projektcontrolling, Honorar- und Stundenlogik, Liquiditätsplanung, Kapazitätsplanung, Verantwortlichkeiten und internen Arbeitsprozessen.',
+            'Die Website dient der allgemeinen Information über ein geplantes Beratungsangebot. Eine entgeltliche Tätigkeit wird erst nach Abschluss der erforderlichen steuerlichen bzw. gewerberechtlichen Anmeldung aufgenommen.',
+          ],
+        },
+        {
+          title: 'Umsatzsteuer',
+          paragraphs: ['Eine Umsatzsteuer-Identifikationsnummer liegt derzeit nicht vor.'],
+        },
+        {
+          title: 'Berufsrechtliche Hinweise',
+          paragraphs: [
+            'Die auf dieser Website angebotenen Inhalte stellen keine Architektenleistungen, keine Rechtsberatung, keine Steuerberatung und keine Wirtschaftsprüfung dar. Die Beratung bezieht sich auf organisatorische, wirtschaftliche und operative Steuerungsfragen von Architektur- und Planungsbüros.',
+          ],
+        },
+        {
+          title: 'Online-Streitbeilegung',
+          paragraphs: [
+            'Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:\nhttps://ec.europa.eu/consumers/odr/',
+          ],
+        },
+        {
+          title: 'Verbraucherstreitbeilegung',
+          paragraphs: [
+            'Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
+          ],
+        },
+        {
+          title: 'Haftung für Inhalte',
+          paragraphs: [
+            'Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.',
+            'Als Diensteanbieterin bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen gesetzlichen Bestimmungen verantwortlich. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.',
+          ],
+        },
+        {
+          title: 'Haftung für Links',
+          paragraphs: [
+            'Diese Website kann Links zu externen Websites Dritter enthalten, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.',
+          ],
+        },
+        {
+          title: 'Urheberrecht',
+          paragraphs: [
+            'Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf dieser Website unterliegen dem Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Verwertung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung der jeweiligen Rechteinhaberin.',
+            'Soweit Inhalte auf dieser Website nicht von der Seitenbetreiberin erstellt wurden, werden die Urheberrechte Dritter beachtet und entsprechende Inhalte als solche gekennzeichnet.',
+          ],
+        },
+      ],
+    },
+    privacy: {
+      kicker: 'Datenschutz',
+      title: 'Datenschutzerklärung',
+      blocks: [
+        {
+          title: '1. Datenschutz auf einen Blick',
+          paragraphs: [
+            'Allgemeine Hinweise',
+            'Die folgenden Hinweise geben einen Überblick darüber, was mit personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.',
+            'Diese Website dient der Information über ein Beratungsangebot für Architektur- und Planungsbüros. Personenbezogene Daten werden auf dieser Website nur in dem Umfang verarbeitet, der für den Betrieb der Website, die technische Bereitstellung und die Kommunikation mit Ihnen erforderlich ist.',
+          ],
+        },
+        {
+          title: '2. Verantwortliche Stelle',
+          paragraphs: [
+            'Verantwortlich für die Datenverarbeitung auf dieser Website ist:',
+            'Studio Benign\nNicole Lilly Nikonenko\nStafflerstraße 10\n6020 Innsbruck\nÖsterreich',
+            'E-Mail: nicolenikonenko@gmail.com\nWebsite: www.studiobenign.com',
+            'Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung personenbezogener Daten entscheidet.',
+          ],
+        },
+        {
+          title: '3. Hosting und technische Bereitstellung',
+          paragraphs: [
+            'Diese Website wird über Cloudflare Pages bereitgestellt.',
+            'Anbieter ist:',
+            'Cloudflare Germany GmbH\nRosental 7\n80331 München\nDeutschland',
+            'bzw. je nach Vertrags- und Leistungsbeziehung:',
+            'Cloudflare, Inc.\n101 Townsend St.\nSan Francisco, CA 94107\nUSA',
+            'Beim Aufruf dieser Website verarbeitet Cloudflare technische Daten, die für die Auslieferung, Sicherheit und Stabilität der Website erforderlich sind. Dazu können insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seiten bzw. Dateien, Browsertyp, Betriebssystem, Referrer-URL und technische Logdaten gehören.',
+            'Die Nutzung von Cloudflare erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in einer sicheren, stabilen und effizienten Bereitstellung dieser Website.',
+            'Cloudflare kann personenbezogene Daten im Rahmen der technischen Bereitstellung auch in Rechenzentren außerhalb der Europäischen Union verarbeiten. Soweit personenbezogene Daten in Drittländer, insbesondere in die USA, übermittelt werden, erfolgt dies auf Grundlage der hierfür vorgesehenen datenschutzrechtlichen Mechanismen, insbesondere geeigneter Garantien nach Art. 44 ff. DSGVO, soweit erforderlich.',
+            'Weitere Informationen zur Datenverarbeitung durch Cloudflare finden Sie in den Datenschutzinformationen von Cloudflare:\nhttps://www.cloudflare.com/privacypolicy/',
+          ],
+        },
+        {
+          title: '4. Zugriffsdaten und Server-Logfiles',
+          paragraphs: [
+            'Beim Besuch dieser Website werden technisch notwendige Zugriffsdaten verarbeitet. Diese Daten sind erforderlich, um die Website korrekt anzuzeigen, die Systemsicherheit zu gewährleisten und technische Fehler nachvollziehen zu können.',
+            'Hierzu können gehören:',
+            '- IP-Adresse\n- Datum und Uhrzeit des Zugriffs\n- besuchte Seite oder Datei\n- übertragene Datenmenge\n- Browsertyp und Browserversion\n- Betriebssystem\n- Referrer-URL\n- Hostname des zugreifenden Rechners',
+            'Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der technischen Funktionsfähigkeit, Sicherheit und Optimierung der Website.',
+          ],
+        },
+        {
+          title: '5. Kontaktaufnahme per E-Mail',
+          paragraphs: [
+            'Wenn Sie per E-Mail Kontakt aufnehmen, werden die von Ihnen übermittelten personenbezogenen Daten verarbeitet. Dazu gehören insbesondere Ihre E-Mail-Adresse, Ihr Name, der Inhalt Ihrer Nachricht sowie gegebenenfalls weitere von Ihnen freiwillig übermittelte Angaben.',
+            'Die Verarbeitung erfolgt zur Bearbeitung Ihrer Anfrage und zur Kommunikation mit Ihnen.',
+            'Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage auf eine Vertragsanbahnung oder ein mögliches Beratungsverhältnis gerichtet ist. In allen übrigen Fällen erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der sachgerechten Beantwortung Ihrer Anfrage.',
+            'Die Daten werden gelöscht, sobald sie für die Bearbeitung Ihrer Anfrage nicht mehr erforderlich sind, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.',
+          ],
+        },
+        {
+          title: '6. Keine Kontaktformulare, keine Newsletter, kein Tracking',
+          paragraphs: [
+            'Diese Website verwendet derzeit keine Kontaktformulare, keine Newsletter-Anmeldung und keine Webanalyse- oder Marketing-Tracking-Dienste.',
+            'Es werden derzeit keine Analyse-Cookies, Marketing-Cookies oder vergleichbare Tracking-Technologien eingesetzt.',
+            'Sollten künftig entsprechende Funktionen eingesetzt werden, wird diese Datenschutzerklärung entsprechend angepasst. Sofern hierfür eine Einwilligung erforderlich ist, wird diese vorab eingeholt.',
+          ],
+        },
+        {
+          title: '7. Cookies und vergleichbare Technologien',
+          paragraphs: [
+            'Diese Website setzt nach aktuellem Stand keine nicht erforderlichen Cookies ein.',
+            'Soweit technisch notwendige Speicher- oder Zugriffsvorgänge erforderlich sein sollten, erfolgen diese auf Grundlage von § 25 Abs. 2 TDDDG sowie Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der technisch fehlerfreien und sicheren Bereitstellung der Website.',
+            'Nicht notwendige Cookies oder vergleichbare Technologien werden nur nach vorheriger Einwilligung eingesetzt.',
+          ],
+        },
+        {
+          title: '8. SSL- bzw. TLS-Verschlüsselung',
+          paragraphs: [
+            'Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers mit „https://“ beginnt und an dem Schloss-Symbol in Ihrer Browserzeile.',
+            'Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können Daten, die Sie an diese Website übermitteln, nicht ohne Weiteres von Dritten mitgelesen werden.',
+          ],
+        },
+        {
+          title: '9. Speicherdauer',
+          paragraphs: [
+            'Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wird, verbleiben personenbezogene Daten nur so lange, wie der jeweilige Verarbeitungszweck besteht.',
+            'Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung widerrufen, werden die Daten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten oder sonstige rechtlich zulässige Gründe für eine weitere Speicherung bestehen.',
+          ],
+        },
+        {
+          title: '10. Empfänger personenbezogener Daten',
+          paragraphs: [
+            'Eine Weitergabe personenbezogener Daten an Dritte erfolgt nur, soweit dies zur Bereitstellung der Website, zur Bearbeitung Ihrer Anfrage, zur Erfüllung rechtlicher Pflichten oder auf Grundlage eines berechtigten Interesses erforderlich ist.',
+            'Beim Einsatz technischer Dienstleister erfolgt die Verarbeitung personenbezogener Daten, soweit erforderlich, auf Grundlage entsprechender datenschutzrechtlicher Vereinbarungen.',
+          ],
+        },
+        {
+          title: '11. Ihre Rechte',
+          paragraphs: [
+            'Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:',
+            '- Auskunft über Ihre gespeicherten personenbezogenen Daten\n- Berichtigung unrichtiger Daten\n- Löschung Ihrer Daten\n- Einschränkung der Verarbeitung\n- Datenübertragbarkeit\n- Widerspruch gegen bestimmte Verarbeitungen\n- Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft',
+            'Hierzu können Sie sich jederzeit an die oben genannte verantwortliche Stelle wenden.',
+          ],
+        },
+        {
+          title: '12. Widerspruchsrecht nach Art. 21 DSGVO',
+          paragraphs: [
+            'Wenn die Verarbeitung personenbezogener Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO erfolgt, haben Sie das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen diese Verarbeitung einzulegen.',
+            'Werden personenbezogene Daten zum Zweck der Direktwerbung verarbeitet, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung zum Zwecke derartiger Werbung einzulegen.',
+          ],
+        },
+        {
+          title: '13. Beschwerderecht bei einer Aufsichtsbehörde',
+          paragraphs: [
+            'Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen datenschutzrechtliche Vorschriften verstößt.',
+            'In Österreich ist dies die:',
+            'Österreichische Datenschutzbehörde\nBarichgasse 40-42\n1030 Wien\nÖsterreich',
+            'Website:\nhttps://www.dsb.gv.at',
+          ],
+        },
+        {
+          title: '14. Stand dieser Datenschutzerklärung',
+          paragraphs: ['Stand: Mai 2026'],
+        },
+      ],
+    },
   },
   en: {
     brandLine: 'Business steering for architecture and planning practices',
@@ -506,6 +693,193 @@ const content = {
       legal: ['Legal notice', 'Privacy'],
       copyright: 'Studio Benign 2026',
     },
+    impressum: {
+      kicker: 'Legal notice',
+      title: 'Angaben gemäß den gesetzlichen Informationspflichten',
+      blocks: [
+        {
+          title: 'Studio Benign',
+          paragraphs: ['Nicole Lilly Nikonenko\nStafflerstraße 10\n6020 Innsbruck\nÖsterreich'],
+        },
+        {
+          title: 'Kontakt',
+          paragraphs: ['E-Mail: nicolenikonenko@gmail.com\nWebsite: www.studiobenign.com'],
+        },
+        {
+          title: 'Verantwortlich für den Inhalt',
+          paragraphs: ['Nicole Lilly Nikonenko\nStafflerstraße 10\n6020 Innsbruck\nÖsterreich'],
+        },
+        {
+          title: 'Berufliche Tätigkeit',
+          paragraphs: [
+            'Studio Benign ist ein im Aufbau befindliches Beratungsangebot für Architektur- und Planungsbüros mit Schwerpunkt auf Bürosteuerung, wirtschaftlicher Transparenz, Projektcontrolling, Honorar- und Stundenlogik, Liquiditätsplanung, Kapazitätsplanung, Verantwortlichkeiten und internen Arbeitsprozessen.',
+            'Die Website dient der allgemeinen Information über ein geplantes Beratungsangebot. Eine entgeltliche Tätigkeit wird erst nach Abschluss der erforderlichen steuerlichen bzw. gewerberechtlichen Anmeldung aufgenommen.',
+          ],
+        },
+        {
+          title: 'Umsatzsteuer',
+          paragraphs: ['Eine Umsatzsteuer-Identifikationsnummer liegt derzeit nicht vor.'],
+        },
+        {
+          title: 'Berufsrechtliche Hinweise',
+          paragraphs: [
+            'Die auf dieser Website angebotenen Inhalte stellen keine Architektenleistungen, keine Rechtsberatung, keine Steuerberatung und keine Wirtschaftsprüfung dar. Die Beratung bezieht sich auf organisatorische, wirtschaftliche und operative Steuerungsfragen von Architektur- und Planungsbüros.',
+          ],
+        },
+        {
+          title: 'Online-Streitbeilegung',
+          paragraphs: [
+            'Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:\nhttps://ec.europa.eu/consumers/odr/',
+          ],
+        },
+        {
+          title: 'Verbraucherstreitbeilegung',
+          paragraphs: [
+            'Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
+          ],
+        },
+        {
+          title: 'Haftung für Inhalte',
+          paragraphs: [
+            'Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.',
+            'Als Diensteanbieterin bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen gesetzlichen Bestimmungen verantwortlich. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.',
+          ],
+        },
+        {
+          title: 'Haftung für Links',
+          paragraphs: [
+            'Diese Website kann Links zu externen Websites Dritter enthalten, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.',
+          ],
+        },
+        {
+          title: 'Urheberrecht',
+          paragraphs: [
+            'Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf dieser Website unterliegen dem Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Verwertung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung der jeweiligen Rechteinhaberin.',
+            'Soweit Inhalte auf dieser Website nicht von der Seitenbetreiberin erstellt wurden, werden die Urheberrechte Dritter beachtet und entsprechende Inhalte als solche gekennzeichnet.',
+          ],
+        },
+      ],
+    },
+    privacy: {
+      kicker: 'Privacy',
+      title: 'Datenschutzerklärung',
+      blocks: [
+        {
+          title: '1. Datenschutz auf einen Blick',
+          paragraphs: [
+            'Allgemeine Hinweise',
+            'Die folgenden Hinweise geben einen Überblick darüber, was mit personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.',
+            'Diese Website dient der Information über ein Beratungsangebot für Architektur- und Planungsbüros. Personenbezogene Daten werden auf dieser Website nur in dem Umfang verarbeitet, der für den Betrieb der Website, die technische Bereitstellung und die Kommunikation mit Ihnen erforderlich ist.',
+          ],
+        },
+        {
+          title: '2. Verantwortliche Stelle',
+          paragraphs: [
+            'Verantwortlich für die Datenverarbeitung auf dieser Website ist:',
+            'Studio Benign\nNicole Lilly Nikonenko\nStafflerstraße 10\n6020 Innsbruck\nÖsterreich',
+            'E-Mail: nicolenikonenko@gmail.com\nWebsite: www.studiobenign.com',
+            'Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung personenbezogener Daten entscheidet.',
+          ],
+        },
+        {
+          title: '3. Hosting und technische Bereitstellung',
+          paragraphs: [
+            'Diese Website wird über Cloudflare Pages bereitgestellt.',
+            'Anbieter ist:',
+            'Cloudflare Germany GmbH\nRosental 7\n80331 München\nDeutschland',
+            'bzw. je nach Vertrags- und Leistungsbeziehung:',
+            'Cloudflare, Inc.\n101 Townsend St.\nSan Francisco, CA 94107\nUSA',
+            'Beim Aufruf dieser Website verarbeitet Cloudflare technische Daten, die für die Auslieferung, Sicherheit und Stabilität der Website erforderlich sind. Dazu können insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seiten bzw. Dateien, Browsertyp, Betriebssystem, Referrer-URL und technische Logdaten gehören.',
+            'Die Nutzung von Cloudflare erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in einer sicheren, stabilen und effizienten Bereitstellung dieser Website.',
+            'Cloudflare kann personenbezogene Daten im Rahmen der technischen Bereitstellung auch in Rechenzentren außerhalb der Europäischen Union verarbeiten. Soweit personenbezogene Daten in Drittländer, insbesondere in die USA, übermittelt werden, erfolgt dies auf Grundlage der hierfür vorgesehenen datenschutzrechtlichen Mechanismen, insbesondere geeigneter Garantien nach Art. 44 ff. DSGVO, soweit erforderlich.',
+            'Weitere Informationen zur Datenverarbeitung durch Cloudflare finden Sie in den Datenschutzinformationen von Cloudflare:\nhttps://www.cloudflare.com/privacypolicy/',
+          ],
+        },
+        {
+          title: '4. Zugriffsdaten und Server-Logfiles',
+          paragraphs: [
+            'Beim Besuch dieser Website werden technisch notwendige Zugriffsdaten verarbeitet. Diese Daten sind erforderlich, um die Website korrekt anzuzeigen, die Systemsicherheit zu gewährleisten und technische Fehler nachvollziehen zu können.',
+            'Hierzu können gehören:',
+            '- IP-Adresse\n- Datum und Uhrzeit des Zugriffs\n- besuchte Seite oder Datei\n- übertragene Datenmenge\n- Browsertyp und Browserversion\n- Betriebssystem\n- Referrer-URL\n- Hostname des zugreifenden Rechners',
+            'Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der technischen Funktionsfähigkeit, Sicherheit und Optimierung der Website.',
+          ],
+        },
+        {
+          title: '5. Kontaktaufnahme per E-Mail',
+          paragraphs: [
+            'Wenn Sie per E-Mail Kontakt aufnehmen, werden die von Ihnen übermittelten personenbezogenen Daten verarbeitet. Dazu gehören insbesondere Ihre E-Mail-Adresse, Ihr Name, der Inhalt Ihrer Nachricht sowie gegebenenfalls weitere von Ihnen freiwillig übermittelte Angaben.',
+            'Die Verarbeitung erfolgt zur Bearbeitung Ihrer Anfrage und zur Kommunikation mit Ihnen.',
+            'Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage auf eine Vertragsanbahnung oder ein mögliches Beratungsverhältnis gerichtet ist. In allen übrigen Fällen erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der sachgerechten Beantwortung Ihrer Anfrage.',
+            'Die Daten werden gelöscht, sobald sie für die Bearbeitung Ihrer Anfrage nicht mehr erforderlich sind, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.',
+          ],
+        },
+        {
+          title: '6. Keine Kontaktformulare, keine Newsletter, kein Tracking',
+          paragraphs: [
+            'Diese Website verwendet derzeit keine Kontaktformulare, keine Newsletter-Anmeldung und keine Webanalyse- oder Marketing-Tracking-Dienste.',
+            'Es werden derzeit keine Analyse-Cookies, Marketing-Cookies oder vergleichbare Tracking-Technologien eingesetzt.',
+            'Sollten künftig entsprechende Funktionen eingesetzt werden, wird diese Datenschutzerklärung entsprechend angepasst. Sofern hierfür eine Einwilligung erforderlich ist, wird diese vorab eingeholt.',
+          ],
+        },
+        {
+          title: '7. Cookies und vergleichbare Technologien',
+          paragraphs: [
+            'Diese Website setzt nach aktuellem Stand keine nicht erforderlichen Cookies ein.',
+            'Soweit technisch notwendige Speicher- oder Zugriffsvorgänge erforderlich sein sollten, erfolgen diese auf Grundlage von § 25 Abs. 2 TDDDG sowie Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der technisch fehlerfreien und sicheren Bereitstellung der Website.',
+            'Nicht notwendige Cookies oder vergleichbare Technologien werden nur nach vorheriger Einwilligung eingesetzt.',
+          ],
+        },
+        {
+          title: '8. SSL- bzw. TLS-Verschlüsselung',
+          paragraphs: [
+            'Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers mit „https://“ beginnt und an dem Schloss-Symbol in Ihrer Browserzeile.',
+            'Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können Daten, die Sie an diese Website übermitteln, nicht ohne Weiteres von Dritten mitgelesen werden.',
+          ],
+        },
+        {
+          title: '9. Speicherdauer',
+          paragraphs: [
+            'Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wird, verbleiben personenbezogene Daten nur so lange, wie der jeweilige Verarbeitungszweck besteht.',
+            'Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung widerrufen, werden die Daten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten oder sonstige rechtlich zulässige Gründe für eine weitere Speicherung bestehen.',
+          ],
+        },
+        {
+          title: '10. Empfänger personenbezogener Daten',
+          paragraphs: [
+            'Eine Weitergabe personenbezogener Daten an Dritte erfolgt nur, soweit dies zur Bereitstellung der Website, zur Bearbeitung Ihrer Anfrage, zur Erfüllung rechtlicher Pflichten oder auf Grundlage eines berechtigten Interesses erforderlich ist.',
+            'Beim Einsatz technischer Dienstleister erfolgt die Verarbeitung personenbezogener Daten, soweit erforderlich, auf Grundlage entsprechender datenschutzrechtlicher Vereinbarungen.',
+          ],
+        },
+        {
+          title: '11. Ihre Rechte',
+          paragraphs: [
+            'Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:',
+            '- Auskunft über Ihre gespeicherten personenbezogenen Daten\n- Berichtigung unrichtiger Daten\n- Löschung Ihrer Daten\n- Einschränkung der Verarbeitung\n- Datenübertragbarkeit\n- Widerspruch gegen bestimmte Verarbeitungen\n- Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft',
+            'Hierzu können Sie sich jederzeit an die oben genannte verantwortliche Stelle wenden.',
+          ],
+        },
+        {
+          title: '12. Widerspruchsrecht nach Art. 21 DSGVO',
+          paragraphs: [
+            'Wenn die Verarbeitung personenbezogener Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO erfolgt, haben Sie das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen diese Verarbeitung einzulegen.',
+            'Werden personenbezogene Daten zum Zweck der Direktwerbung verarbeitet, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung zum Zwecke derartiger Werbung einzulegen.',
+          ],
+        },
+        {
+          title: '13. Beschwerderecht bei einer Aufsichtsbehörde',
+          paragraphs: [
+            'Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen datenschutzrechtliche Vorschriften verstößt.',
+            'In Österreich ist dies die:',
+            'Österreichische Datenschutzbehörde\nBarichgasse 40-42\n1030 Wien\nÖsterreich',
+            'Website:\nhttps://www.dsb.gv.at',
+          ],
+        },
+        {
+          title: '14. Stand dieser Datenschutzerklärung',
+          paragraphs: ['Stand: Mai 2026'],
+        },
+      ],
+    },
   },
 } satisfies Record<Lang, Record<string, unknown>>
 
@@ -545,9 +919,11 @@ function App() {
   }
 
   const currentPage = pages.find((page) => page.path === currentPath)
+  const isImpressumPage = currentPath === '/impressum'
+  const isPrivacyPage = currentPath === '/datenschutz'
   const shellProps = { copy, navigate }
 
-  if (currentPage) {
+  if (currentPage || isImpressumPage || isPrivacyPage) {
     return (
       <main className="page-shell">
         <SiteHeader
@@ -558,18 +934,22 @@ function App() {
           pages={pages}
           setLanguage={setLanguage}
         />
-        {currentPage.path === '/ansatz' ? (
+        {isImpressumPage ? (
+          <ImpressumPage copy={copy} />
+        ) : isPrivacyPage ? (
+          <PrivacyPage copy={copy} />
+        ) : currentPage?.path === '/ansatz' ? (
           <ApproachPage copy={copy} />
-        ) : currentPage.path === '/leistungen' ? (
+        ) : currentPage?.path === '/leistungen' ? (
           <ServicesPage {...shellProps} />
-        ) : currentPage.path === '/ueber-mich' ? (
+        ) : currentPage?.path === '/ueber-mich' ? (
           <AboutPage copy={copy} />
-        ) : currentPage.path === '/kontakt' ? (
+        ) : currentPage?.path === '/kontakt' ? (
           <ContactPage copy={copy} />
-        ) : currentPage.path === '/wissen' ? (
+        ) : currentPage?.path === '/wissen' ? (
           <KnowledgePage copy={copy} />
         ) : (
-          <section className="empty-page" aria-label={currentPage.label}></section>
+          <section className="empty-page"></section>
         )}
         <SiteFooter {...shellProps} />
       </main>
@@ -796,8 +1176,8 @@ function SiteFooter({ copy, navigate }: SharedPageProps) {
         <span>INNSBRUCK</span>
       </div>
       <div className="legal-links">
-        <a href="/kontakt" onClick={navigate('/kontakt')}>{copy.footer.legal[0]}</a>
-        <a href="/kontakt" onClick={navigate('/kontakt')}>{copy.footer.legal[1]}</a>
+        <a href="/impressum" onClick={navigate('/impressum')}>{copy.footer.legal[0]}</a>
+        <a href="/datenschutz" onClick={navigate('/datenschutz')}>{copy.footer.legal[1]}</a>
       </div>
     </footer>
   )
@@ -992,6 +1372,72 @@ function KnowledgePage({ copy }: Pick<SharedPageProps, 'copy'>) {
             <li key={item}>{item}</li>
           ))}
         </ul>
+      </div>
+    </section>
+  )
+}
+
+function ImpressumPage({ copy }: Pick<SharedPageProps, 'copy'>) {
+  return (
+    <LegalPage
+      blocks={copy.impressum.blocks}
+      kicker={copy.impressum.kicker}
+      title="Impressum"
+      intro={copy.impressum.title}
+    />
+  )
+}
+
+function PrivacyPage({ copy }: Pick<SharedPageProps, 'copy'>) {
+  return (
+    <LegalPage
+      blocks={copy.privacy.blocks}
+      kicker={copy.privacy.kicker}
+      title={copy.privacy.title}
+    />
+  )
+}
+
+type LegalBlock = {
+  title: string
+  paragraphs: string[]
+}
+
+type LegalPageProps = {
+  blocks: LegalBlock[]
+  kicker: string
+  title: string
+  intro?: string
+}
+
+function LegalPage({ blocks, kicker, title, intro }: LegalPageProps) {
+  return (
+    <section className="impressum-page" aria-labelledby="legal-title">
+      <div className="impressum-intro">
+        <p className="kicker">{kicker}</p>
+        <h1 id="legal-title">{title}</h1>
+        <span className="accent-rule" aria-hidden="true"></span>
+        {intro && <p>{intro}</p>}
+      </div>
+
+      <div className="impressum-list">
+        {blocks.map((block) => (
+          <section className="impressum-block" key={block.title}>
+            <h2>{block.title}</h2>
+            <div>
+              {block.paragraphs.map((paragraph) => (
+                <p key={paragraph}>
+                  {paragraph.split('\n').map((line, index) => (
+                    <span key={line}>
+                      {index > 0 && <br />}
+                      {line.startsWith('http') ? <a href={line}>{line}</a> : line}
+                    </span>
+                  ))}
+                </p>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
     </section>
   )

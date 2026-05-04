@@ -887,6 +887,79 @@ a {
   line-height: 1.6;
 }
 
+.impressum-page {
+  width: calc(100% - (var(--page-gutter) * 2));
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 86px 0 72px;
+}
+
+.impressum-intro {
+  max-width: 760px;
+}
+
+.impressum-intro h1 {
+  margin: 28px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(3.4rem, 5vw, 5.2rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.impressum-intro .accent-rule {
+  margin: 32px 0 34px;
+}
+
+.impressum-intro p:not(.kicker),
+.impressum-block p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.78;
+}
+
+.impressum-list {
+  margin-top: 74px;
+  border-top: 1px solid var(--border);
+}
+
+.impressum-block {
+  display: grid;
+  grid-template-columns: 34% minmax(0, 66%);
+  gap: 84px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.impressum-block h2 {
+  max-width: 360px;
+  margin: 0;
+  color: var(--sage-green);
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.impressum-block > div {
+  max-width: 760px;
+  padding-left: 84px;
+  border-left: 1px solid var(--border);
+}
+
+.impressum-block p + p {
+  margin-top: 18px;
+}
+
+.impressum-block a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+
 .two-column-section {
   display: grid;
   grid-template-columns: 50.7% 49.3%;
@@ -1233,7 +1306,8 @@ a {
   .approach-workflow,
   .approach-goal,
   .about-page-hero,
-  .about-page-sections {
+  .about-page-sections,
+  .impressum-block {
     grid-template-columns: 1fr;
     gap: 36px;
   }
@@ -1250,14 +1324,16 @@ a {
   .service-format-details,
   .approach-section > div,
   .services-callout > div + div,
-  .about-page-sections article + article {
+  .about-page-sections article + article,
+  .impressum-block > div {
     border-left: 0;
   }
 
   .service-detail,
   .approach-section > div,
   .services-callout > div + div,
-  .about-page-sections article + article {
+  .about-page-sections article + article,
+  .impressum-block > div {
     padding-left: 0;
   }
 
@@ -1494,11 +1570,26 @@ a {
     padding: 56px 0 44px;
   }
 
+  .impressum-page {
+    width: calc(100% - 32px);
+    padding: 56px 0 44px;
+  }
+
   .services-intro h1,
   .about-page-copy h1,
-  .approach-intro h1 {
+  .approach-intro h1,
+  .impressum-intro h1 {
     font-size: clamp(2.55rem, 11vw, 3.45rem);
     line-height: 1.02;
+  }
+
+  .impressum-list {
+    margin-top: 48px;
+  }
+
+  .impressum-block {
+    gap: 18px;
+    padding: 28px 0;
   }
 
   .approach-section-list {
