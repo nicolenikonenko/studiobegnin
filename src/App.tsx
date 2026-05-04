@@ -712,18 +712,36 @@ type SiteHeaderProps = {
 }
 
 function SiteHeader({ copy, currentPath, language, navigate, pages, setLanguage }: SiteHeaderProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleNavigate = (path: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+    setIsMenuOpen(false)
+    navigate(path)(event)
+  }
+
   return (
-    <header className="site-header" aria-label="Main navigation">
-      <a className="brand-lockup" href="/" onClick={navigate('/')} aria-label="Studio Benign home">
+    <header className={`site-header${isMenuOpen ? ' is-menu-open' : ''}`} aria-label="Main navigation">
+      <a className="brand-lockup" href="/" onClick={handleNavigate('/')} aria-label="Studio Benign home">
         <span className="wordmark">Studio Benign</span>
         <span>{copy.brandLine}</span>
       </a>
-      <nav className="nav-links" aria-label="Page navigation">
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-controls="site-navigation"
+        aria-expanded={isMenuOpen}
+        onClick={() => setIsMenuOpen((open) => !open)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav className="nav-links" id="site-navigation" aria-label="Page navigation">
         {pages.map((page) => (
           <a
             className={currentPath === page.path ? 'is-active' : undefined}
             href={page.path}
-            onClick={navigate(page.path)}
+            onClick={handleNavigate(page.path)}
             key={page.path}
           >
             {page.label}
@@ -734,7 +752,10 @@ function SiteHeader({ copy, currentPath, language, navigate, pages, setLanguage 
         <button
           className={language === 'de' ? 'is-active' : undefined}
           type="button"
-          onClick={() => setLanguage('de')}
+          onClick={() => {
+            setIsMenuOpen(false)
+            setLanguage('de')
+          }}
         >
           DE
         </button>
@@ -742,7 +763,10 @@ function SiteHeader({ copy, currentPath, language, navigate, pages, setLanguage 
         <button
           className={language === 'en' ? 'is-active' : undefined}
           type="button"
-          onClick={() => setLanguage('en')}
+          onClick={() => {
+            setIsMenuOpen(false)
+            setLanguage('en')
+          }}
         >
           EN
         </button>
